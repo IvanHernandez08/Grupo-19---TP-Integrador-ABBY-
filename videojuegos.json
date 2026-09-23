@@ -1,0 +1,3124 @@
+[
+  {
+    "id": 1,
+    "titulo": "Elden Ring",
+    "desarrollador": "FromSoftware",
+    "generos": [
+      "RPG de acción"
+    ],
+    "plataformas": [
+      "PlayStation 5",
+      "Xbox Series X/S"
+    ],
+    "calificacion": 96,
+    "calificaciones": {
+      "PlayStation 5": 96,
+      "Xbox Series X/S": 96
+    }
+  },
+  {
+    "id": 2,
+    "titulo": "Baldur's Gate 3",
+    "desarrollador": "Larian Studios",
+    "generos": [
+      "RPG"
+    ],
+    "plataformas": [
+      "PlayStation 5",
+      "Xbox Series X/S",
+      "PC"
+    ],
+    "calificacion": 99,
+    "calificaciones": {
+      "PlayStation 5": 96,
+      "Xbox Series X/S": 99,
+      "PC": 96
+    }
+  },
+  {
+    "id": 3,
+    "titulo": "Astro Bot",
+    "desarrollador": "Team Asobi",
+    "generos": [
+      "Plataformas"
+    ],
+    "plataformas": [
+      "PlayStation 5"
+    ],
+    "calificacion": 94,
+    "calificaciones": {
+      "PlayStation 5": 94
+    }
+  },
+  {
+    "id": 4,
+    "titulo": "Elden Ring: Shadow of the Erdtree",
+    "desarrollador": "FromSoftware",
+    "generos": [
+      "RPG de acción",
+      "Expansión"
+    ],
+    "plataformas": [
+      "PlayStation 5",
+      "Xbox Series X/S"
+    ],
+    "calificacion": 95,
+    "calificaciones": {
+      "PlayStation 5": 94,
+      "Xbox Series X/S": 95
+    }
+  },
+  {
+    "id": 5,
+    "titulo": "The Witcher 3: Wild Hunt – Complete Edition",
+    "desarrollador": "CD Projekt Red",
+    "generos": [
+      "RPG de acción"
+    ],
+    "plataformas": [
+      "PlayStation 5",
+      "Xbox Series X/S"
+    ],
+    "calificacion": 94,
+    "calificaciones": {
+      "PlayStation 5": 94,
+      "Xbox Series X/S": 94
+    }
+  },
+  {
+    "id": 6,
+    "titulo": "Metaphor: ReFantazio",
+    "desarrollador": [
+      "Atlus",
+      "Studio Zero"
+    ],
+    "generos": [
+      "RPG"
+    ],
+    "plataformas": [
+      "PlayStation 4",
+      "PlayStation 5",
+      "Xbox Series X/S",
+      "PC"
+    ],
+    "calificacion": 94,
+    "calificaciones": {
+      "PlayStation 5": 94,
+      "Xbox Series X/S": 92
+    }
+  },
+  {
+    "id": 7,
+    "titulo": "God of War Ragnarök",
+    "desarrollador": "Santa Monica Studio",
+    "generos": [
+      "Acción",
+      "Aventura"
+    ],
+    "plataformas": [
+      "PlayStation 5"
+    ],
+    "calificacion": 94,
+    "calificaciones": {
+      "PlayStation 5": 94
+    }
+  },
+  {
+    "id": 8,
+    "titulo": "Hades II",
+    "desarrollador": "Supergiant Games",
+    "generos": [
+      "Roguelike",
+      "Acción"
+    ],
+    "plataformas": [
+      "PlayStation 5",
+      "Xbox Series X/S",
+      "PC",
+      "Nintendo Switch 2"
+    ],
+    "calificacion": 95,
+    "calificaciones": {
+      "PlayStation 5": 94,
+      "Xbox Series X/S": 95,
+      "PC": 94,
+      "Nintendo Switch 2": 95
+    }
+  },
+  {
+    "id": 9,
+    "titulo": "Hades",
+    "desarrollador": "Supergiant Games",
+    "generos": [
+      "Roguelike",
+      "Acción"
+    ],
+    "plataformas": [
+      "PlayStation 5",
+      "Xbox Series X/S",
+      "PC",
+      "Nintendo Switch"
+    ],
+    "calificacion": 93,
+    "calificaciones": {
+      "PlayStation 5": 93,
+      "Xbox Series X/S": 93,
+      "PC": 93,
+      "Nintendo Switch": 93
+    }
+  },
+  {
+    "id": 10,
+    "titulo": "Resident Evil Requiem",
+    "desarrollador": "Capcom",
+    "generos": [
+      "Survival horror"
+    ],
+    "plataformas": [
+      "PlayStation 5",
+      "Xbox Series X/S",
+      "Nintendo Switch 2",
+      "PC"
+    ],
+    "calificacion": 93,
+    "calificaciones": {
+      "PlayStation 5": 93,
+      "Xbox Series X/S": 93,
+      "Nintendo Switch 2": 90
+    }
+  },
+  {
+    "id": 11,
+    "titulo": "Final Fantasy VII Rebirth",
+    "desarrollador": "Square Enix",
+    "generos": [
+      "RPG",
+      "Acción"
+    ],
+    "plataformas": [
+      "PlayStation 5",
+      "Nintendo Switch 2"
+    ],
+    "calificacion": 92,
+    "calificaciones": {
+      "PlayStation 5": 92,
+      "Nintendo Switch 2": 87
+    }
+  },
+  {
+    "id": 12,
+    "titulo": "Street Fighter 6",
+    "desarrollador": "Capcom",
+    "generos": [
+      "Lucha"
+    ],
+    "plataformas": [
+      "PlayStation 5",
+      "Nintendo Switch 2",
+      "Xbox Series X/S",
+      "PC"
+    ],
+    "calificacion": 92,
+    "calificaciones": {
+      "PlayStation 5": 92,
+      "Nintendo Switch 2": 87
+    }
+  },
+  {
+    "id": 13,
+    "titulo": "Demon's Souls",
+    "desarrollador": "Bluepoint Games",
+    "generos": [
+      "RPG de acción"
+    ],
+    "plataformas": [
+      "PlayStation 5"
+    ],
+    "calificacion": 92,
+    "calificaciones": {
+      "PlayStation 5": 92
+    }
+  },
+  {
+    "id": 14,
+    "titulo": "Ratchet & Clank: Rift Apart",
+    "desarrollador": "Insomniac Games",
+    "generos": [
+      "Plataformas",
+      "Acción"
+    ],
+    "plataformas": [
+      "PlayStation 5"
+    ],
+    "calificacion": 88,
+    "calificaciones": {
+      "PlayStation 5": 88
+    }
+  },
+  {
+    "id": 15,
+    "titulo": "Returnal",
+    "desarrollador": "Housemarque",
+    "generos": [
+      "Roguelike",
+      "Shooter"
+    ],
+    "plataformas": [
+      "PlayStation 5"
+    ],
+    "calificacion": 86,
+    "calificaciones": {
+      "PlayStation 5": 86
+    }
+  },
+  {
+    "id": 16,
+    "titulo": "Marvel's Spider-Man 2",
+    "desarrollador": "Insomniac Games",
+    "generos": [
+      "Acción",
+      "Aventura"
+    ],
+    "plataformas": [
+      "PlayStation 5"
+    ],
+    "calificacion": 90,
+    "calificaciones": {
+      "PlayStation 5": 90
+    }
+  },
+  {
+    "id": 17,
+    "titulo": "Final Fantasy VII Remake Intergrade",
+    "desarrollador": "Square Enix",
+    "generos": [
+      "RPG",
+      "Acción"
+    ],
+    "plataformas": [
+      "PlayStation 5",
+      "Nintendo Switch 2"
+    ],
+    "calificacion": 89,
+    "calificaciones": {
+      "PlayStation 5": 89,
+      "Nintendo Switch 2": 89
+    }
+  },
+  {
+    "id": 18,
+    "titulo": "Resident Evil 4",
+    "desarrollador": "Capcom",
+    "generos": [
+      "Survival horror",
+      "Acción"
+    ],
+    "plataformas": [
+      	"GameCube",
+        "PlayStation 2",
+        "PC",
+        "PlayStation 3",
+        "PlayStation 4",
+        "Nintendo Switch",
+        "Xbox 360"
+    ],
+    "calificacion": 96,
+    "calificaciones": {
+      "PlayStation 5": 91,
+      "Xbox Series X/S": 91,
+      "PlayStation 2": 96
+    }
+  },
+  {
+    "id": 19,
+    "titulo": "Alan Wake 2",
+    "desarrollador": "Remedy Entertainment",
+    "generos": [
+      "Survival horror"
+    ],
+    "plataformas": [
+      "PlayStation 5"
+    ],
+    "calificacion": 89,
+    "calificaciones": {
+      "PlayStation 5": 89
+    }
+  },
+  {
+    "id": 20,
+    "titulo": "Death Stranding Director's Cut",
+    "desarrollador": "Kojima Productions",
+    "generos": [
+      "Acción",
+      "Aventura"
+    ],
+    "plataformas": [
+      "PlayStation 5",
+      "Xbox Series X/S"
+    ],
+    "calificacion": 91,
+    "calificaciones": {
+      "PlayStation 5": 85,
+      "Xbox Series X/S": 91
+    }
+  },
+  {
+    "id": 21,
+    "titulo": "Red Dead Redemption 2",
+    "desarrollador": "Rockstar Studios",
+    "generos": [
+      "Acción",
+      "Aventura"
+    ],
+    "plataformas": [
+      "PlayStation 4",
+      "PC"
+    ],
+    "calificacion": 97,
+    "calificaciones": {
+      "PlayStation 4": 97
+    }
+  },
+  {
+    "id": 22,
+    "titulo": "Grand Theft Auto V",
+    "desarrollador": "Rockstar North",
+    "generos": [
+      "Acción",
+      "Aventura"
+    ],
+    "plataformas": [
+      "PlayStation 4",
+      "PC",
+      "PlayStation 3",
+      "Xbox 360"
+    ],
+    "calificacion": 97,
+    "calificaciones": {
+      "PlayStation 4": 97,
+      "PC": 96,
+      "PlayStation 3": 97,
+      "Xbox 360": 97
+    }
+  },
+  {
+    "id": 23,
+    "titulo": "Persona 5 Royal",
+    "desarrollador": "Atlus",
+    "generos": [
+      "RPG"
+    ],
+    "plataformas": [
+      "PlayStation 4",
+      "Xbox Series X/S",
+      "PC",
+      "Nintendo Switch"
+    ],
+    "calificacion": 95,
+    "calificaciones": {
+      "PlayStation 4": 95,
+      "Xbox Series X/S": 94,
+      "PC": 95,
+      "Nintendo Switch": 94
+    }
+  },
+  {
+    "id": 24,
+    "titulo": "The Last of Us Remastered",
+    "desarrollador": "Naughty Dog",
+    "generos": [
+      "Acción",
+      "Aventura"
+    ],
+    "plataformas": [
+      "PlayStation 4"
+    ],
+    "calificacion": 95,
+    "calificaciones": {
+      "PlayStation 4": 95
+    }
+  },
+  {
+    "id": 25,
+    "titulo": "God of War",
+    "desarrollador": "Santa Monica Studio",
+    "generos": [
+      "Acción",
+      "Aventura"
+    ],
+    "plataformas": [
+      "PlayStation 4",
+      "PC"
+    ],
+    "calificacion": 94,
+    "calificaciones": {
+      "PlayStation 4": 94,
+      "PC": 93
+    }
+  },
+  {
+    "id": 26,
+    "titulo": "The Last of Us Part II",
+    "desarrollador": "Naughty Dog",
+    "generos": [
+      "Acción",
+      "Aventura"
+    ],
+    "plataformas": [
+      "PlayStation 4"
+    ],
+    "calificacion": 93,
+    "calificaciones": {
+      "PlayStation 4": 93
+    }
+  },
+  {
+    "id": 27,
+    "titulo": "Persona 3 Reload",
+    "desarrollador": "Atlus",
+    "generos": [
+      "RPG",
+      "JRPG"
+    ],
+    "plataformas": [
+      "PC",
+      "PlayStation 4",
+      "PlayStation 5",
+      "Xbox Series X|S"
+    ],
+    "calificacion": 87
+  },
+  {
+    "id": 28,
+    "titulo": "Metal Gear Solid V: The Phantom Pain",
+    "desarrollador": "Kojima Productions",
+    "generos": [
+      "Acción",
+      "Sigilo"
+    ],
+    "plataformas": [
+      "PlayStation 4"
+    ],
+    "calificacion": 93,
+    "calificaciones": {
+      "PlayStation 4": 93
+    }
+  },
+  {
+    "id": 29,
+    "titulo": "Uncharted 4: A Thief's End",
+    "desarrollador": "Naughty Dog",
+    "generos": [
+      "Acción",
+      "Aventura"
+    ],
+    "plataformas": [
+      "PlayStation 4"
+    ],
+    "calificacion": 93,
+    "calificaciones": {
+      "PlayStation 4": 93
+    }
+  },
+  {
+    "id": 30,
+    "titulo": "Journey",
+    "desarrollador": "Thatgamecompany",
+    "generos": [
+      "Aventura"
+    ],
+    "plataformas": [
+      "PlayStation 4"
+    ],
+    "calificacion": 92,
+    "calificaciones": {
+      "PlayStation 4": 92
+    }
+  },
+  {
+    "id": 31,
+    "titulo": "Bloodborne",
+    "desarrollador": "FromSoftware",
+    "generos": [
+      "RPG de acción"
+    ],
+    "plataformas": [
+      "PlayStation 4"
+    ],
+    "calificacion": 92,
+    "calificaciones": {
+      "PlayStation 4": 92
+    }
+  },
+  {
+    "id": 32,
+    "titulo": "Undertale",
+    "desarrollador": "Toby Fox",
+    "generos": [
+      "RPG"
+    ],
+    "plataformas": [
+      "PlayStation 4",
+      "Nintendo Switch",
+      "PC"
+    ],
+    "calificacion": 93,
+    "calificaciones": {
+      "PlayStation 4": 92,
+      "Nintendo Switch": 93,
+      "PC": 92
+    }
+  },
+  {
+    "id": 33,
+    "titulo": "The Witcher 3: Wild Hunt",
+    "desarrollador": "CD Projekt Red",
+    "generos": [
+      "RPG de acción"
+    ],
+    "plataformas": [
+      "PlayStation 4",
+      "PC",
+      "Xbox Series X|S",
+      "PlayStation 5",
+      "Nintendo Switch"
+    ],
+    "calificacion": 92,
+    "calificaciones": {
+      "PlayStation 4": 91,
+      "PC": 92,
+      "Xbox Series X|S": 94,
+      "PlayStation 5": 91,
+      "Nintendo Switch": 89
+    }
+  },
+  {
+    "id": 34,
+    "titulo": "Divinity: Original Sin II – Definitive Edition",
+    "desarrollador": "Larian Studios",
+    "generos": [
+      "RPG"
+    ],
+    "plataformas": [
+      "PlayStation 4",
+      "Nintendo Switch"
+    ],
+    "calificacion": 93,
+    "calificaciones": {
+      "PlayStation 4": 92,
+      "Nintendo Switch": 93
+    }
+  },
+  {
+    "id": 35,
+    "titulo": "Final Fantasy XIV: Shadowbringers",
+    "desarrollador": "Square Enix",
+    "generos": [
+      "MMORPG",
+      "RPG"
+    ],
+    "plataformas": [
+      "PlayStation 4"
+    ],
+    "calificacion": 91,
+    "calificaciones": {
+      "PlayStation 4": 91
+    }
+  },
+  {
+    "id": 36,
+    "titulo": "Shadow of the Colossus",
+    "desarrollador": "Bluepoint Games",
+    "generos": [
+      "Acción",
+      "Aventura"
+    ],
+    "plataformas": [
+      "PlayStation 4"
+    ],
+    "calificacion": 91,
+    "calificaciones": {
+      "PlayStation 4": 91
+    }
+  },
+  {
+    "id": 37,
+    "titulo": "The Witcher 3: Blood and Wine",
+    "desarrollador": "CD Projekt Red",
+    "generos": [
+      "RPG",
+      "Expansión"
+    ],
+    "plataformas": [
+      "PlayStation 4"
+    ],
+    "calificacion": 91,
+    "calificaciones": {
+      "PlayStation 4": 91
+    }
+  },
+  {
+    "id": 38,
+    "titulo": "Celeste",
+    "desarrollador": "Extremely OK Games",
+    "generos": [
+      "Plataformas"
+    ],
+    "plataformas": [
+      "PlayStation 4",
+      "Nintendo Switch",
+      "PC"
+    ],
+    "calificacion": 92,
+    "calificaciones": {
+      "PlayStation 4": 91,
+      "Nintendo Switch": 92,
+      "PC": 88
+    }
+  },
+  {
+    "id": 39,
+    "titulo": "INSIDE",
+    "desarrollador": "Playdead",
+    "generos": [
+      "Aventura",
+      "Plataformas"
+    ],
+    "plataformas": [
+      "PlayStation 4"
+    ],
+    "calificacion": 91,
+    "calificaciones": {
+      "PlayStation 4": 91
+    }
+  },
+  {
+    "id": 40,
+    "titulo": "NieR: Automata – Game of the YoRHa Edition",
+    "desarrollador": "PlatinumGames",
+    "generos": [
+      "RPG de acción"
+    ],
+    "plataformas": [
+      "PlayStation 4"
+    ],
+    "calificacion": 91,
+    "calificaciones": {
+      "PlayStation 4": 91
+    }
+  },
+  {
+    "id": 41,
+    "titulo": "The Stanley Parable: Ultra Deluxe",
+    "desarrollador": "Crows Crows Crows",
+    "generos": [
+      "Aventura",
+      "Comedia"
+    ],
+    "plataformas": [
+      "Xbox Series X/S"
+    ],
+    "calificacion": 93,
+    "calificaciones": {
+      "Xbox Series X/S": 93
+    }
+  },
+  {
+    "id": 42,
+    "titulo": "Split Fiction",
+    "desarrollador": "Hazelight Studios",
+    "generos": [
+      "Acción",
+      "Aventura",
+      "Cooperativo"
+    ],
+    "plataformas": [
+      "Xbox Series X/S",
+      "Nintendo Switch 2"
+    ],
+    "calificacion": 93,
+    "calificaciones": {
+      "Xbox Series X/S": 93,
+      "Nintendo Switch 2": 88
+    }
+  },
+  {
+    "id": 43,
+    "titulo": "Forza Horizon 5",
+    "desarrollador": "Playground Games",
+    "generos": [
+      "Carreras"
+    ],
+    "plataformas": [
+      "Xbox Series X/S"
+    ],
+    "calificacion": 92,
+    "calificaciones": {
+      "Xbox Series X/S": 92
+    }
+  },
+  {
+    "id": 44,
+    "titulo": "Like a Dragon: Infinite Wealth",
+    "desarrollador": "Ryu Ga Gotoku Studio",
+    "generos": [
+      "RPG"
+    ],
+    "plataformas": [
+      "Xbox Series X/S"
+    ],
+    "calificacion": 92,
+    "calificaciones": {
+      "Xbox Series X/S": 92
+    }
+  },
+  {
+    "id": 45,
+    "titulo": "Shin Megami Tensei V: Vengeance",
+    "desarrollador": "Atlus",
+    "generos": [
+      "RPG"
+    ],
+    "plataformas": [
+      "Xbox Series X/S",
+      "PlayStation 5",
+      "PlayStation 4",
+      "Nintendo Switch"
+    ],
+    "calificacion": 92,
+    "calificaciones": {
+      "Xbox Series X/S": 92,
+      "PlayStation 5": 87,
+      "PlayStation 4": 88,
+      "Nintendo Switch": 86
+    }
+  },
+  {
+    "id": 46,
+    "titulo": "Mixtape",
+    "desarrollador": "Beethoven & Dinosaur",
+    "generos": [
+      "Aventura"
+    ],
+    "plataformas": [
+      "Xbox Series X/S"
+    ],
+    "calificacion": 92,
+    "calificaciones": {
+      "Xbox Series X/S": 92
+    }
+  },
+  {
+    "id": 47,
+    "titulo": "Clair Obscur: Expedition 33",
+    "desarrollador": "Sandfall Interactive",
+    "generos": [
+      "RPG"
+    ],
+    "plataformas": [
+      "Xbox Series X/S",
+      "PlayStation 5",
+      "PC"
+    ],
+    "calificacion": 91,
+    "calificaciones": {
+      "Xbox Series X/S": 91,
+      "PlayStation 5": 91,
+      "PC": 92
+    }
+  },
+  {
+    "id": 48,
+    "titulo": "Diablo IV",
+    "desarrollador": "Blizzard Entertainment",
+    "generos": [
+      "RPG de acción"
+    ],
+    "plataformas": [
+      "Xbox Series X/S"
+    ],
+    "calificacion": 91,
+    "calificaciones": {
+      "Xbox Series X/S": 91
+    }
+  },
+  {
+    "id": 49,
+    "titulo": "Forza Horizon 6",
+    "desarrollador": "Playground Games",
+    "generos": [
+      "Carreras"
+    ],
+    "plataformas": [
+      "Xbox Series X/S"
+    ],
+    "calificacion": 90,
+    "calificaciones": {
+      "Xbox Series X/S": 90
+    }
+  },
+  {
+    "id": 50,
+    "titulo": "Disco Elysium: The Final Cut",
+    "desarrollador": "ZA/UM",
+    "generos": [
+      "RPG"
+    ],
+    "plataformas": [
+      "PC"
+    ],
+    "calificacion": 97,
+    "calificaciones": {
+      "PC": 97
+    }
+  },
+  {
+    "id": 51,
+    "titulo": "Half-Life 2",
+    "desarrollador": "Valve",
+    "generos": [
+      "FPS"
+    ],
+    "plataformas": [
+      "PC"
+    ],
+    "calificacion": 96,
+    "calificaciones": {
+      "PC": 96
+    }
+  },
+  {
+    "id": 52,
+    "titulo": "The Orange Box",
+    "desarrollador": "Valve",
+    "generos": [
+      "FPS",
+      "Compilación"
+    ],
+    "plataformas": [
+      "PC",
+      "Xbox 360"
+    ],
+    "calificacion": 96,
+    "calificaciones": {
+      "PC": 96,
+      "Xbox 360": 96
+    }
+  },
+  {
+    "id": 53,
+    "titulo": "Half-Life",
+    "desarrollador": "Valve",
+    "generos": [
+      "FPS"
+    ],
+    "plataformas": [
+      "PC"
+    ],
+    "calificacion": 96,
+    "calificaciones": {
+      "PC": 96
+    }
+  },
+  {
+    "id": 54,
+    "titulo": "BioShock",
+    "desarrollador": "2K Boston / 2K Australia",
+    "generos": [
+      "FPS"
+    ],
+    "plataformas": [
+      "PC",
+      "PlayStation 3",
+      "Xbox 360"
+    ],
+    "calificacion": 96,
+    "calificaciones": {
+      "PC": 96,
+      "PlayStation 3": 94,
+      "Xbox 360": 96
+    }
+  },
+  {
+    "id": 55,
+    "titulo": "Baldur's Gate II: Shadows of Amn",
+    "desarrollador": "BioWare",
+    "generos": [
+      "RPG"
+    ],
+    "plataformas": [
+      "PC"
+    ],
+    "calificacion": 95,
+    "calificaciones": {
+      "PC": 95
+    }
+  },
+  {
+    "id": 56,
+    "titulo": "Portal 2",
+    "desarrollador": "Valve",
+    "generos": [
+      "Puzzle",
+      "FPS",
+      "Plataformas"
+    ],
+    "plataformas": [
+      "PC",
+      "PlayStation 3",
+      "Xbox 360"
+    ],
+    "calificacion": 95,
+    "calificaciones": {
+      "PC": 95,
+      "PlayStation 3": 95,
+      "Xbox 360": 95
+    }
+  },
+  {
+    "id": 57,
+    "titulo": "The Elder Scrolls V: Skyrim",
+    "desarrollador": "Bethesda Game Studios",
+    "generos": [
+      "RPG de acción",
+      "RPG"
+    ],
+    "plataformas": [
+      "PC",
+      "PlayStation 3",
+      "Xbox 360"
+    ],
+    "calificacion": 96,
+    "calificaciones": {
+      "PC": 94,
+      "PlayStation 3": 92,
+      "Xbox 360": 96
+    }
+  },
+  {
+    "id": 58,
+    "titulo": "Mass Effect 2",
+    "desarrollador": "BioWare",
+    "generos": [
+      "RPG",
+      "Acción"
+    ],
+    "plataformas": [
+      "PC",
+      "PlayStation 3",
+      "Xbox 360"
+    ],
+    "calificacion": 96,
+    "calificaciones": {
+      "PC": 94,
+      "PlayStation 3": 94,
+      "Xbox 360": 96
+    }
+  },
+  {
+    "id": 59,
+    "titulo": "Grand Theft Auto: Vice City",
+    "desarrollador": "Rockstar North",
+    "generos": [
+      "Acción",
+      "Aventura"
+    ],
+    "plataformas": [
+      "PC",
+      "PlayStation 2",
+      "Xbox"
+    ],
+    "calificacion": 95,
+    "calificaciones": {
+      "PC": 94,
+      "PlayStation 2": 95,
+      "Xbox": 95
+    }
+  },
+  {
+    "id": 60,
+    "titulo": "The Elder Scrolls IV: Oblivion",
+    "desarrollador": "Bethesda Game Studios",
+    "generos": [
+      "RPG"
+    ],
+    "plataformas": [
+      "PC",
+      "PlayStation 3",
+      "Xbox 360"
+    ],
+    "calificacion": 94,
+    "calificaciones": {
+      "PC": 94,
+      "PlayStation 3": 93,
+      "Xbox 360": 94
+    }
+  },
+  {
+    "id": 61,
+    "titulo": "StarCraft II: Wings of Liberty",
+    "desarrollador": "Blizzard Entertainment",
+    "generos": [
+      "Estrategia en tiempo real"
+    ],
+    "plataformas": [
+      "PC"
+    ],
+    "calificacion": 93,
+    "calificaciones": {
+      "PC": 93
+    }
+  },
+  {
+    "id": 62,
+    "titulo": "Mass Effect",
+    "desarrollador": "BioWare",
+    "generos": [
+      "RPG",
+      "Acción"
+    ],
+    "plataformas": [
+      "PC"
+    ],
+    "calificacion": 91,
+    "calificaciones": {
+      "PC": 91
+    }
+  },
+  {
+    "id": 63,
+    "titulo": "Civilization IV",
+    "desarrollador": "Firaxis Games",
+    "generos": [
+      "Estrategia"
+    ],
+    "plataformas": [
+      "PC"
+    ],
+    "calificacion": 94,
+    "calificaciones": {
+      "PC": 94
+    }
+  },
+  {
+    "id": 64,
+    "titulo": "Quake",
+    "desarrollador": "id Software",
+    "generos": [
+      "FPS"
+    ],
+    "plataformas": [
+      "PC"
+    ],
+    "calificacion": 94,
+    "calificaciones": {
+      "PC": 94
+    }
+  },
+  {
+    "id": 65,
+    "titulo": "The Legend of Zelda: Breath of the Wild",
+    "desarrollador": "Nintendo",
+    "generos": [
+      "Acción",
+      "Aventura"
+    ],
+    "plataformas": [
+      "Nintendo Switch"
+    ],
+    "calificacion": 97,
+    "calificaciones": {
+      "Nintendo Switch": 97
+    }
+  },
+  {
+    "id": 66,
+    "titulo": "Super Mario Odyssey",
+    "desarrollador": "Nintendo",
+    "generos": [
+      "Plataformas"
+    ],
+    "plataformas": [
+      "Nintendo Switch"
+    ],
+    "calificacion": 97,
+    "calificaciones": {
+      "Nintendo Switch": 97
+    }
+  },
+  {
+    "id": 67,
+    "titulo": "The House in Fata Morgana",
+    "desarrollador": "Novectacle",
+    "generos": [
+      "Novela visual"
+    ],
+    "plataformas": [
+      "Nintendo Switch"
+    ],
+    "calificacion": 96,
+    "calificaciones": {
+      "Nintendo Switch": 96
+    }
+  },
+  {
+    "id": 68,
+    "titulo": "The Legend of Zelda: Tears of the Kingdom",
+    "desarrollador": "Nintendo",
+    "generos": [
+      "Acción",
+      "Aventura"
+    ],
+    "plataformas": [
+      "Nintendo Switch"
+    ],
+    "calificacion": 96,
+    "calificaciones": {
+      "Nintendo Switch": 96
+    }
+  },
+  {
+    "id": 69,
+    "titulo": "Portal: Companion Collection",
+    "desarrollador": "Valve",
+    "generos": [
+      "Puzzle",
+      "Plataformas"
+    ],
+    "plataformas": [
+      "Nintendo Switch"
+    ],
+    "calificacion": 95,
+    "calificaciones": {
+      "Nintendo Switch": 95
+    }
+  },
+  {
+    "id": 70,
+    "titulo": "Tetris Effect: Connected",
+    "desarrollador": "Enhance Games",
+    "generos": [
+      "Puzzle"
+    ],
+    "plataformas": [
+      "Nintendo Switch"
+    ],
+    "calificacion": 94,
+    "calificaciones": {
+      "Nintendo Switch": 94
+    }
+  },
+  {
+    "id": 71,
+    "titulo": "Metroid Prime Remastered",
+    "desarrollador": "Retro Studios",
+    "generos": [
+      "Acción",
+      "Aventura"
+    ],
+    "plataformas": [
+      "Nintendo Switch"
+    ],
+    "calificacion": 94,
+    "calificaciones": {
+      "Nintendo Switch": 94
+    }
+  },
+  {
+    "id": 72,
+    "titulo": "Ori and the Will of the Wisps",
+    "desarrollador": "Moon Studios",
+    "generos": [
+      "Plataformas",
+      "Acción"
+    ],
+    "plataformas": [
+      "Nintendo Switch"
+    ],
+    "calificacion": 93,
+    "calificaciones": {
+      "Nintendo Switch": 93
+    }
+  },
+  {
+    "id": 73,
+    "titulo": "Super Smash Bros. Ultimate",
+    "desarrollador": "Bandai Namco / Sora",
+    "generos": [
+      "Lucha"
+    ],
+    "plataformas": [
+      "Nintendo Switch"
+    ],
+    "calificacion": 93,
+    "calificaciones": {
+      "Nintendo Switch": 93
+    }
+  },
+  {
+    "id": 74,
+    "titulo": "Super Mario Bros. Wonder",
+    "desarrollador": "Nintendo",
+    "generos": [
+      "Plataformas"
+    ],
+    "plataformas": [
+      "Nintendo Switch"
+    ],
+    "calificacion": 92,
+    "calificaciones": {
+      "Nintendo Switch": 92
+    }
+  },
+  {
+    "id": 75,
+    "titulo": "Xenoblade Chronicles 3: Future Redeemed",
+    "desarrollador": "Monolith Soft",
+    "generos": [
+      "RPG"
+    ],
+    "plataformas": [
+      "Nintendo Switch"
+    ],
+    "calificacion": 92,
+    "calificaciones": {
+      "Nintendo Switch": 92
+    }
+  },
+  {
+    "id": 76,
+    "titulo": "Castlevania Dominus Collection",
+    "desarrollador": "Konami",
+    "generos": [
+      "Acción",
+      "Aventura"
+    ],
+    "plataformas": [
+      "Nintendo Switch"
+    ],
+    "calificacion": 92,
+    "calificaciones": {
+      "Nintendo Switch": 92
+    }
+  },
+  {
+    "id": 77,
+    "titulo": "Bayonetta 2",
+    "desarrollador": "PlatinumGames",
+    "generos": [
+      "Acción"
+    ],
+    "plataformas": [
+      "Nintendo Switch"
+    ],
+    "calificacion": 92,
+    "calificaciones": {
+      "Nintendo Switch": 92
+    }
+  },
+  {
+    "id": 78,
+    "titulo": "Mario Kart 8 Deluxe",
+    "desarrollador": "Nintendo",
+    "generos": [
+      "Carreras"
+    ],
+    "plataformas": [
+      "Nintendo Switch"
+    ],
+    "calificacion": 92,
+    "calificaciones": {
+      "Nintendo Switch": 92
+    }
+  },
+  {
+    "id": 79,
+    "titulo": "Unavowed",
+    "desarrollador": "Wadjet Eye Games",
+    "generos": [
+      "Aventura gráfica"
+    ],
+    "plataformas": [
+      "Nintendo Switch"
+    ],
+    "calificacion": 91,
+    "calificaciones": {
+      "Nintendo Switch": 91
+    }
+  },
+  {
+    "id": 80,
+    "titulo": "The Legend of Zelda: Tears of the Kingdom – Switch 2 Edition",
+    "desarrollador": "Nintendo",
+    "generos": [
+      "Acción",
+      "Aventura"
+    ],
+    "plataformas": [
+      "Nintendo Switch 2"
+    ],
+    "calificacion": 95,
+    "calificaciones": {
+      "Nintendo Switch 2": 95
+    }
+  },
+  {
+    "id": 81,
+    "titulo": "The Legend of Zelda: Breath of the Wild – Switch 2 Edition",
+    "desarrollador": "Nintendo",
+    "generos": [
+      "Acción",
+      "Aventura"
+    ],
+    "plataformas": [
+      "Nintendo Switch 2"
+    ],
+    "calificacion": 94,
+    "calificaciones": {
+      "Nintendo Switch 2": 94
+    }
+  },
+  {
+    "id": 82,
+    "titulo": "Sektori",
+    "desarrollador": "Toko Midori Games",
+    "generos": [
+      "Shooter"
+    ],
+    "plataformas": [
+      "Nintendo Switch 2"
+    ],
+    "calificacion": 94,
+    "calificaciones": {
+      "Nintendo Switch 2": 94
+    }
+  },
+  {
+    "id": 83,
+    "titulo": "Hollow Knight: Silksong",
+    "desarrollador": "Team Cherry",
+    "generos": [
+      "Metroidvania"
+    ],
+    "plataformas": [
+      "Nintendo Switch 2",
+      "PC",
+      "Nintendo Switch",
+      "PlayStation 4",
+      "PlayStation 5",
+      "Xbox Series X/S"
+    ],
+    "calificacion": 91,
+    "calificaciones": {
+      "Nintendo Switch 2": 91,
+      "PC": 90,
+      "Nintendo Switch":  94,
+      "PlayStation 4": 92,
+      "PlayStation 5": 92,
+      "Xbox Series X/S": 90
+    }
+  },
+  {
+    "id": 84,
+    "titulo": "Donkey Kong Bananza",
+    "desarrollador": "Nintendo",
+    "generos": [
+      "Plataformas",
+      "Acción"
+    ],
+    "plataformas": [
+      "Nintendo Switch 2"
+    ],
+    "calificacion": 91,
+    "calificaciones": {
+      "Nintendo Switch 2": 91
+    }
+  },
+  {
+    "id": 85,
+    "titulo": "Mina the Hollower",
+    "desarrollador": "Yacht Club Games",
+    "generos": [
+      "Acción",
+      "Aventura"
+    ],
+    "plataformas": [
+      "Nintendo Switch 2"
+    ],
+    "calificacion": 90,
+    "calificaciones": {
+      "Nintendo Switch 2": 90
+    }
+  },
+  {
+    "id": 86,
+    "titulo": "Trails in the Sky 1st Chapter",
+    "desarrollador": "Nihon Falcom",
+    "generos": [
+      "RPG"
+    ],
+    "plataformas": [
+      "Nintendo Switch 2"
+    ],
+    "calificacion": 90,
+    "calificaciones": {
+      "Nintendo Switch 2": 90
+    }
+  },
+  {
+    "id": 87,
+    "titulo": "and Roger",
+    "desarrollador": "Studio",
+    "generos": [
+      "Aventura"
+    ],
+    "plataformas": [
+      "Nintendo Switch 2"
+    ],
+    "calificacion": 90,
+    "calificaciones": {
+      "Nintendo Switch 2": 90
+    }
+  },
+  {
+    "id": 88,
+    "titulo": "Pokémon Pokopia",
+    "desarrollador": "Nintendo / Game Freak",
+    "generos": [
+      "Simulación",
+      "Aventura"
+    ],
+    "plataformas": [
+      "Nintendo Switch 2"
+    ],
+    "calificacion": 89,
+    "calificaciones": {
+      "Nintendo Switch 2": 89
+    }
+  },
+  {
+    "id": 89,
+    "titulo": "The Drifter",
+    "desarrollador": "Powerhoof",
+    "generos": [
+      "Aventura"
+    ],
+    "plataformas": [
+      "Nintendo Switch 2"
+    ],
+    "calificacion": 89,
+    "calificaciones": {
+      "Nintendo Switch 2": 89
+    }
+  },
+  {
+    "id": 90,
+    "titulo": "PRAGMATA",
+    "desarrollador": "Capcom",
+    "generos": [
+      "Acción",
+      "Aventura"
+    ],
+    "plataformas": [
+      "Nintendo Switch 2",
+      "PlayStation 5",
+      "PC",
+      "Xbox Series X/S"
+    ],
+    "calificacion": 89,
+    "calificaciones": {
+      "Nintendo Switch 2": 89,
+      "PlayStation 5": 85,
+      "PC": 88,
+      "Xbox Series X/S": 87
+    }
+  },
+  {
+    "id": 91,
+    "titulo": "Red Dead Redemption and Undead Nightmare",
+    "desarrollador": "Rockstar San Diego",
+    "generos": [
+      "Acción",
+      "Aventura"
+    ],
+    "plataformas": [
+      "Nintendo Switch 2"
+    ],
+    "calificacion": 88,
+    "calificaciones": {
+      "Nintendo Switch 2": 88
+    }
+  },
+  {
+    "id": 92,
+    "titulo": "Pokémon Pokopia: Bubbly Basin",
+    "desarrollador": "Nintendo / Game Freak",
+    "generos": [
+      "Expansión",
+      "Simulación"
+    ],
+    "plataformas": [
+      "Nintendo Switch 2"
+    ],
+    "calificacion": 88,
+    "calificaciones": {
+      "Nintendo Switch 2": 88
+    }
+  },
+  {
+    "id": 93,
+    "titulo": "Simogo Legacy Collection",
+    "desarrollador": "Simogo",
+    "generos": [
+      "Aventura",
+      "Colección"
+    ],
+    "plataformas": [
+      "Nintendo Switch 2"
+    ],
+    "calificacion": 88,
+    "calificaciones": {
+      "Nintendo Switch 2": 88
+    }
+  },
+  {
+    "id": 94,
+    "titulo": "Grand Theft Auto IV",
+    "desarrollador": "Rockstar North",
+    "generos": [
+      "Acción",
+      "Aventura"
+    ],
+    "plataformas": [
+      "PlayStation 3",
+      "Xbox 360"
+    ],
+    "calificacion": 98,
+    "calificaciones": {
+      "PlayStation 3": 98,
+      "Xbox 360": 98
+    }
+  },
+  {
+    "id": 95,
+    "titulo": "Uncharted 2: Among Thieves",
+    "desarrollador": "Naughty Dog",
+    "generos": [
+      "Acción",
+      "Aventura"
+    ],
+    "plataformas": [
+      "PlayStation 3"
+    ],
+    "calificacion": 96,
+    "calificaciones": {
+      "PlayStation 3": 96
+    }
+  },
+  {
+    "id": 96,
+    "titulo": "Batman: Arkham City",
+    "desarrollador": "Rocksteady Studios",
+    "generos": [
+      "Acción",
+      "Aventura"
+    ],
+    "plataformas": [
+      "PlayStation 3",
+      "Xbox 360"
+    ],
+    "calificacion": 96,
+    "calificaciones": {
+      "PlayStation 3": 96,
+      "Xbox 360": 94
+    }
+  },
+  {
+    "id": 97,
+    "titulo": "LittleBigPlanet",
+    "desarrollador": "Media Molecule",
+    "generos": [
+      "Plataformas",
+      "Creación"
+    ],
+    "plataformas": [
+      "PlayStation 3"
+    ],
+    "calificacion": 95,
+    "calificaciones": {
+      "PlayStation 3": 95
+    }
+  },
+  {
+    "id": 98,
+    "titulo": "Red Dead Redemption",
+    "desarrollador": "Rockstar San Diego",
+    "generos": [
+      "Acción",
+      "Aventura"
+    ],
+    "plataformas": [
+      "PlayStation 3",
+      "Xbox 360"
+    ],
+    "calificacion": 95,
+    "calificaciones": {
+      "PlayStation 3": 95,
+      "Xbox 360": 95
+    }
+  },
+  {
+    "id": 99,
+    "titulo": "The Last of Us",
+    "desarrollador": "Naughty Dog",
+    "generos": [
+      "Acción",
+      "Aventura"
+    ],
+    "plataformas": [
+      "PlayStation 3"
+    ],
+    "calificacion": 95,
+    "calificaciones": {
+      "PlayStation 3": 95
+    }
+  },
+  {
+    "id": 100,
+    "titulo": "BioShock Infinite",
+    "desarrollador": "Irrational Games",
+    "generos": [
+      "FPS"
+    ],
+    "plataformas": [
+      "PlayStation 3",
+      "Xbox 360"
+    ],
+    "calificacion": 94,
+    "calificaciones": {
+      "PlayStation 3": 94,
+      "Xbox 360": 93
+    }
+  },
+  {
+    "id": 101,
+    "titulo": "Call of Duty: Modern Warfare 2",
+    "desarrollador": "Infinity Ward",
+    "generos": [
+      "FPS"
+    ],
+    "plataformas": [
+      "PlayStation 3",
+      "Xbox 360"
+    ],
+    "calificacion": 94,
+    "calificaciones": {
+      "PlayStation 3": 94,
+      "Xbox 360": 94
+    }
+  },
+  {
+    "id": 102,
+    "titulo": "Call of Duty 4: Modern Warfare",
+    "desarrollador": "Infinity Ward",
+    "generos": [
+      "FPS"
+    ],
+    "plataformas": [
+      "PlayStation 3",
+      "Xbox 360"
+    ],
+    "calificacion": 94,
+    "calificaciones": {
+      "PlayStation 3": 94,
+      "Xbox 360": 94
+    }
+  },
+  {
+    "id": 103,
+    "titulo": "Street Fighter IV",
+    "desarrollador": "Capcom",
+    "generos": [
+      "Lucha"
+    ],
+    "plataformas": [
+      "PlayStation 3",
+      "Xbox 360"
+    ],
+    "calificacion": 94,
+    "calificaciones": {
+      "PlayStation 3": 94,
+      "Xbox 360": 93
+    }
+  },
+  {
+    "id": 104,
+    "titulo": "Metal Gear Solid 4: Guns of the Patriots",
+    "desarrollador": "Kojima Productions",
+    "generos": [
+      "Acción",
+      "Sigilo"
+    ],
+    "plataformas": [
+      "PlayStation 3"
+    ],
+    "calificacion": 94,
+    "calificaciones": {
+      "PlayStation 3": 94
+    }
+  },
+  {
+    "id": 105,
+    "titulo": "Braid",
+    "desarrollador": "Number None",
+    "generos": [
+      "Puzzle",
+      "Plataformas"
+    ],
+    "plataformas": [
+      "PlayStation 3",
+      "Xbox 360"
+    ],
+    "calificacion": 93,
+    "calificaciones": {
+      "PlayStation 3": 93,
+      "Xbox 360": 93
+    }
+  },
+  {
+    "id": 106,
+    "titulo": "Mass Effect 3",
+    "desarrollador": "BioWare",
+    "generos": [
+      "RPG",
+      "Acción"
+    ],
+    "plataformas": [
+      "PlayStation 3"
+    ],
+    "calificacion": 93,
+    "calificaciones": {
+      "PlayStation 3": 93
+    }
+  },
+  {
+    "id": 107,
+    "titulo": "God of War III",
+    "desarrollador": "Santa Monica Studio",
+    "generos": [
+      "Acción",
+      "Aventura"
+    ],
+    "plataformas": [
+      "PlayStation 3"
+    ],
+    "calificacion": 92,
+    "calificaciones": {
+      "PlayStation 3": 92
+    }
+  },
+  {
+    "id": 108,
+    "titulo": "Gears of War",
+    "desarrollador": "Epic Games",
+    "generos": [
+      "Acción",
+      "Shooter"
+    ],
+    "plataformas": [
+      "Xbox 360"
+    ],
+    "calificacion": 94,
+    "calificaciones": {
+      "Xbox 360": 94
+    }
+  },
+  {
+    "id": 109,
+    "titulo": "Halo 3",
+    "desarrollador": "Bungie",
+    "generos": [
+      "FPS"
+    ],
+    "plataformas": [
+      "Xbox 360"
+    ],
+    "calificacion": 94,
+    "calificaciones": {
+      "Xbox 360": 94
+    }
+  },
+  {
+    "id": 110,
+    "titulo": "Pac-Man Championship Edition DX",
+    "desarrollador": "Mine Loader",
+    "generos": [
+      "Arcade",
+      "Puzzle"
+    ],
+    "plataformas": [
+      "Xbox 360"
+    ],
+    "calificacion": 93,
+    "calificaciones": {
+      "Xbox 360": 93
+    }
+  },
+  {
+    "id": 111,
+    "titulo": "Fallout 3",
+    "desarrollador": "Bethesda Game Studios",
+    "generos": [
+      "RPG"
+    ],
+    "plataformas": [
+      "Xbox 360"
+    ],
+    "calificacion": 93,
+    "calificaciones": {
+      "Xbox 360": 93
+    }
+  },
+  {
+    "id": 112,
+    "titulo": "Gears of War 2",
+    "desarrollador": "Epic Games",
+    "generos": [
+      "Acción",
+      "Shooter"
+    ],
+    "plataformas": [
+      "Xbox 360"
+    ],
+    "calificacion": 93,
+    "calificaciones": {
+      "Xbox 360": 93
+    }
+  },
+  {
+    "id": 113,
+    "titulo": "SoulCalibur",
+    "desarrollador": "Project Soul",
+    "generos": [
+      "Lucha"
+    ],
+    "plataformas": [
+      "PlayStation 2"
+    ],
+    "calificacion": 98,
+    "calificaciones": {
+      "PlayStation 2": 98
+    }
+  },
+  {
+    "id": 114,
+    "titulo": "Tony Hawk's Pro Skater 3",
+    "desarrollador": "Neversoft",
+    "generos": [
+      "Deportes"
+    ],
+    "plataformas": [
+      "PlayStation 2",
+      "PlayStation",
+      "GameCube",
+      "Xbox",
+      "Nintendo 64"
+    ],
+    "calificacion": 97,
+    "calificaciones": {
+      "PlayStation 2": 97,
+      "PlayStation": 87,
+      "GameCube": 91,
+      "Xbox": 93,
+      "Nintendo 64": 86
+    }
+  },
+  {
+    "id": 115,
+    "titulo": "Grand Theft Auto III",
+    "desarrollador": "DMA Design",
+    "generos": [
+      "Acción",
+      "Aventura"
+    ],
+    "plataformas": [
+      "PlayStation 2",
+      "Xbox"
+    ],
+    "calificacion": 97,
+    "calificaciones": {
+      "PlayStation 2": 97,
+      "Xbox": 97
+    }
+  },
+  {
+    "id": 116,
+    "titulo": "Halo: Combat Evolved",
+    "desarrollador": "Bungie",
+    "generos": [
+      "FPS"
+    ],
+    "plataformas": [
+      "Xbox"
+    ],
+    "calificacion": 97,
+    "calificaciones": {
+      "Xbox": 97
+    }
+  },
+  {
+    "id": 117,
+    "titulo": "Metroid Prime",
+    "desarrollador": "Retro Studios",
+    "generos": [
+      "Acción",
+      "Aventura"
+    ],
+    "plataformas": [
+      "Gamecube"
+    ],
+    "calificacion": 97,
+    "calificaciones": {
+      "Gamecube": 97
+    }
+  },
+  {
+    "id": 118,
+    "titulo": "Metal Gear Solid 2: Sons of Liberty",
+    "desarrollador": "Konami Computer Entertainment Japan",
+    "generos": [
+      "Acción",
+      "Sigilo"
+    ],
+    "plataformas": [
+      "PlayStation 2",
+      "Xbox"
+    ],
+    "calificacion": 96,
+    "calificaciones": {
+      "PlayStation 2": 96,
+      "Xbox": 96
+    }
+  },
+  {
+    "id": 119,
+    "titulo": "Halo 2",
+    "desarrollador": "Bungie",
+    "generos": [
+      "FPS"
+    ],
+    "plataformas": [
+      "Xbox"
+    ],
+    "calificacion": 95,
+    "calificaciones": {
+      "Xbox": 95
+    }
+  },
+  {
+    "id": 120,
+    "titulo": "The Legend of Zelda: The Wind Waker",
+    "desarrollador": "Nintendo EAD",
+    "generos": [
+      "Acción",
+      "Aventura"
+    ],
+    "plataformas": [
+      "GameCube"
+    ],
+    "calificacion": 96,
+    "calificaciones": {
+      "GameCube": 96
+    }
+  },
+  {
+    "id": 121,
+    "titulo": "The Legend of Zelda: Twilight Princess",
+    "desarrollador": "Nintendo EAD",
+    "generos": [
+      "Acción",
+      "Aventura"
+    ],
+    "plataformas": [
+      "GameCube"
+    ],
+    "calificacion": 96,
+    "calificaciones": {
+      "GameCube": 96
+    }
+  },
+  {
+    "id": 122,
+    "titulo": "NFL 2K1",
+    "desarrollador": "Visual Concepts",
+    "generos": [
+      "Deportes"
+    ],
+    "plataformas": [
+      "Dreamcast"
+    ],
+    "calificacion": 97,
+    "calificaciones": {
+      "Dreamcast": 97
+    }
+  },
+  {
+    "id": 123,
+    "titulo": "Tony Hawk's Pro Skater 2",
+    "desarrollador": "Neversoft",
+    "generos": [
+      "Deportes"
+    ],
+    "plataformas": [
+      "PlayStation",
+      "Dreamcast",
+      "Nintendo 64"
+    ],
+    "calificacion": 98,
+    "calificaciones": {
+      "PlayStation": 98,
+      "Dreamcast": 97,
+      "Nintendo 64": 84
+    }
+  },
+  {
+    "id": 124,
+    "titulo": "Final Fantasy X",
+    "desarrollador": "Square",
+    "generos": [
+      "RPG"
+    ],
+    "plataformas": [
+      "PlayStation 2"
+    ],
+    "calificacion": 92,
+    "calificaciones": {
+      "PlayStation 2": 92
+    }
+  },
+  {
+    "id": 125,
+    "titulo": "God of War II",
+    "desarrollador": "Santa Monica Studio",
+    "generos": [
+      "Acción"
+    ],
+    "plataformas": [
+      "PlayStation 2"
+    ],
+    "calificacion": 93,
+    "calificaciones": {
+      "PlayStation 2": 93
+    }
+  },
+  {
+    "id": 126,
+    "titulo": "Gran Turismo 3: A-Spec",
+    "desarrollador": "Polyphony Digital",
+    "generos": [
+      "Carreras"
+    ],
+    "plataformas": [
+      "PlayStation 2"
+    ],
+    "calificacion": 95,
+    "calificaciones": {
+      "PlayStation 2": 95
+    }
+  },
+  {
+    "id": 127,
+    "titulo": "Resident Evil Code: Veronica",
+    "desarrollador": "Capcom",
+    "generos": [
+      "Survival horror"
+    ],
+    "plataformas": [
+      "Dreamcast",
+      "PlayStation 2",
+      "GameCube",
+      "PlayStation 3",
+      "Xbox 360"
+    ],
+    "calificacion": 94,
+    "calificaciones": {
+      "Dreamcast":  96,
+      "PlayStation 2": 94,
+      "GameCube": 91,
+      "PlayStation 3": 91,
+      "Xbox 360": 94
+    }
+  },
+  {
+    "id": 128,
+    "titulo": "Super Smash Bros. Melee",
+    "desarrollador": "HAL Laboratory",
+    "generos": [
+      "Lucha"
+    ],
+    "plataformas": [
+      "GameCube"
+    ],
+    "calificacion": 92,
+    "calificaciones": {
+      "GameCube": 92
+    }
+  },
+  {
+    "id": 129,
+    "titulo": "Devil May Cry",
+    "desarrollador": "Capcom",
+    "generos": [
+      "Acción"
+    ],
+    "plataformas": [
+      "PlayStation 2"
+    ],
+    "calificacion": 94,
+    "calificaciones": {
+      "PlayStation 2": 94
+    }
+  },
+  {
+    "id": 130,
+    "titulo": "Burnout 3: Takedown",
+    "desarrollador": "Criterion Games",
+    "generos": [
+      "Carreras"
+    ],
+    "plataformas": [
+      "PlayStation 2",
+      "Xbox"
+    ],
+    "calificacion": 94,
+    "calificaciones": {
+      "PlayStation 2": 93,
+      "Xbox": 94
+    }
+  },
+  {
+    "id": 131,
+    "titulo": "The Legend of Zelda: Ocarina of Time",
+    "desarrollador": "Nintendo EAD",
+    "generos": [
+      "Acción",
+      "Aventura"
+    ],
+    "plataformas": [
+      "Nintendo 64"
+    ],
+    "calificacion": 99,
+    "calificaciones": {
+      "Nintendo 64": 99
+    }
+  },
+  {
+    "id": 132,
+    "titulo": "Perfect Dark",
+    "desarrollador": "Rare",
+    "generos": [
+      "FPS"
+    ],
+    "plataformas": [
+      "Nintendo 64"
+    ],
+    "calificacion": 97,
+    "calificaciones": {
+      "Nintendo 64": 97
+    }
+  },
+  {
+    "id": 133,
+    "titulo": "GoldenEye 007",
+    "desarrollador": "Rare",
+    "generos": [
+      "FPS"
+    ],
+    "plataformas": [
+      "Nintendo 64"
+    ],
+    "calificacion": 96,
+    "calificaciones": {
+      "Nintendo 64": 96
+    }
+  },
+  {
+    "id": 134,
+    "titulo": "The Legend of Zelda: Majora's Mask",
+    "desarrollador": "Nintendo EAD",
+    "generos": [
+      "Acción",
+      "Aventura"
+    ],
+    "plataformas": [
+      "Nintendo 64"
+    ],
+    "calificacion": 95,
+    "calificaciones": {
+      "Nintendo 64": 95
+    }
+  },
+  {
+    "id": 135,
+    "titulo": "Final Fantasy VII",
+    "desarrollador": "Square",
+    "generos": [
+      "RPG"
+    ],
+    "plataformas": [
+      "PlayStation"
+    ],
+    "calificacion": 92,
+    "calificaciones": {
+      "PlayStation": 92
+    }
+  },
+  {
+    "id": 136,
+    "titulo": "Metal Gear Solid",
+    "desarrollador": "Konami Computer Entertainment Japan",
+    "generos": [
+      "Acción",
+      "Sigilo"
+    ],
+    "plataformas": [
+      "PlayStation"
+    ],
+    "calificacion": 94,
+    "calificaciones": {
+      "PlayStation": 94
+    }
+  },
+  {
+    "id": 137,
+    "titulo": "Gran Turismo",
+    "desarrollador": "Polyphony Digital",
+    "generos": [
+      "Carreras"
+    ],
+    "plataformas": [
+      "PlayStation"
+    ],
+    "calificacion": 94,
+    "calificaciones": {
+      "PlayStation": 94
+    }
+  },
+  {
+    "id": 138,
+    "titulo": "Gran Turismo 2",
+    "desarrollador": "Polyphony Digital",
+    "generos": [
+      "Carreras"
+    ],
+    "plataformas": [
+      "PlayStation"
+    ],
+    "calificacion": 93,
+    "calificaciones": {
+      "PlayStation": 93
+    }
+  },
+  {
+    "id": 139,
+    "titulo": "Castlevania: Symphony of the Night",
+    "desarrollador": "Konami",
+    "generos": [
+      "Metroidvania"
+    ],
+    "plataformas": [
+      "PlayStation"
+    ],
+    "calificacion": 93,
+    "calificaciones": {
+      "PlayStation": 93
+    }
+  },
+  {
+    "id": 140,
+    "titulo": "Tekken 3",
+    "desarrollador": "Namco",
+    "generos": [
+      "Lucha"
+    ],
+    "plataformas": [
+      "PlayStation"
+    ],
+    "calificacion": 96,
+    "calificaciones": {
+      "PlayStation": 96
+    }
+  },
+  {
+    "id": 141,
+    "titulo": "Super Mario 64",
+    "desarrollador": "Nintendo EAD",
+    "generos": [
+      "Plataformas"
+    ],
+    "plataformas": [
+      ""
+    ],
+    "calificacion": 94,
+    "calificaciones": {
+      "Nintendo 64": 94
+    }
+  },
+  {
+    "id": 142,
+    "titulo": "Paper Mario",
+    "desarrollador": "Intelligent Systems",
+    "generos": [
+      "RPG"
+    ],
+    "plataformas": [
+      "Nintendo 64"
+    ],
+    "calificacion": 93,
+    "calificaciones": {
+      "Nintendo 64": 93
+    }
+  },
+  {
+    "id": 143,
+    "titulo": "Banjo-Kazooie",
+    "desarrollador": "Rare",
+    "generos": [
+      "Plataformas"
+    ],
+    "plataformas": [
+      "Nintendo 64"
+    ],
+    "calificacion": 92,
+    "calificaciones": {
+      "Nintendo 64": 92
+    }
+  },
+  {
+    "id": 144,
+    "titulo": "Wave Race 64",
+    "desarrollador": "Nintendo EAD",
+    "generos": [
+      "Carreras"
+    ],
+    "plataformas": [
+      "Nintendo 64"
+    ],
+    "calificacion": 92,
+    "calificaciones": {
+      "Nintendo 64": 92
+    }
+  },
+  {
+    "id": 145,
+    "titulo": "Mario Tennis",
+    "desarrollador": "Camelot Software Planning",
+    "generos": [
+      "Deportes"
+    ],
+    "plataformas": [
+      "Nintendo 64"
+    ],
+    "calificacion": 91,
+    "calificaciones": {
+      "Nintendo 64": 91
+    }
+  },
+  {
+    "id": 146,
+    "titulo": "Mario Golf",
+    "desarrollador": "Camelot Software Planning",
+    "generos": [
+      "Deportes"
+    ],
+    "plataformas": [
+      "Nintendo 64"
+    ],
+    "calificacion": 91,
+    "calificaciones": {
+      "Nintendo 64": 91
+    }
+  },
+  {
+    "id": 147,
+    "titulo": "Rayman 2: The Great Escape",
+    "desarrollador": "Ubisoft Montpellier",
+    "generos": [
+      "Plataformas"
+    ],
+    "plataformas": [
+      "PlayStation"
+    ],
+    "calificacion": 90,
+    "calificaciones": {
+      "Playstation": 90
+    }
+  },
+  {
+    "id": 148,
+    "titulo": "Donkey Kong 64",
+    "desarrollador": "Rare",
+    "generos": [
+      "Plataformas"
+    ],
+    "plataformas": [
+      "Nintendo 64"
+    ],
+    "calificacion": 90,
+    "calificaciones": {
+      "Nintendo 64": 90
+    }
+  },
+  {
+    "id": 149,
+    "titulo": "Resident Evil 2",
+    "desarrollador": "Angel Studios / Capcom",
+    "generos": [
+      "Survival horror"
+    ],
+    "plataformas": [
+      "PlayStation"
+    ],
+    "calificacion": 89,
+    "calificaciones": {
+      "Playstation": 89
+    }
+  },
+  {
+    "id": 150,
+    "titulo": "The Legend of Zelda: A Link to the Past",
+    "desarrollador": "Nintendo EAD",
+    "generos": [
+      "Acción",
+      "Aventura"
+    ],
+    "plataformas": [
+      "SNES"
+    ],
+    "calificacion": 95,
+    "calificaciones": {
+      "SNES": 95
+    }
+  },
+  {
+    "id": 151,
+    "titulo": "Super Metroid",
+    "desarrollador": "Nintendo R&D1;",
+    "generos": [
+      "Acción",
+      "Aventura"
+    ],
+    "plataformas": [
+      "SNES"
+    ],
+    "calificacion": 96,
+    "calificaciones": {
+      "SNES": 96
+    }
+  },
+  {
+    "id": 152,
+    "titulo": "Super Mario World",
+    "desarrollador": "Nintendo EAD",
+    "generos": [
+      "SNES"
+    ],
+    "plataformas": [
+      "SNES"
+    ],
+    "calificacion": 94,
+    "calificaciones": {
+      "SNES": 94
+    }
+  },
+  {
+    "id": 153,
+    "titulo": "Street Fighter II Turbo",
+    "desarrollador": "Capcom",
+    "generos": [
+      "Lucha"
+    ],
+    "plataformas": [
+      "SNES",
+      "Sega Genesis"
+    ],
+    "calificacion": 93,
+    "calificaciones": {
+      "SNES": 93,
+      "Sega Genesis": 90
+    }
+  },
+  {
+    "id": 154,
+    "titulo": "Chrono Trigger",
+    "desarrollador": "Square",
+    "generos": [
+      "RPG"
+    ],
+    "plataformas": [
+      "SNES"
+    ],
+    "calificacion": 92,
+    "calificaciones": {
+      "SNES": 92
+    }
+  },
+  {
+    "id": 155,
+    "titulo": "Final Fantasy VI",
+    "desarrollador": "Square",
+    "generos": [
+      "RPG"
+    ],
+    "plataformas": [
+      "SNES",
+      "PlayStation"
+    ],
+    "calificacion": 92,
+    "calificaciones": {
+      "SNES": 92,
+      "PlayStation": 91
+    }
+  },
+  {
+    "id": 156,
+    "titulo": "Super Mario Kart",
+    "desarrollador": "Nintendo EAD",
+    "generos": [
+      "Carreras"
+    ],
+    "plataformas": [
+      "SNES"
+    ],
+    "calificacion": 93,
+    "calificaciones": {
+      "SNES": 93
+    }
+  },
+  {
+    "id": 157,
+    "titulo": "Donkey Kong Country",
+    "desarrollador": "Rare",
+    "generos": [
+      "Plataformas"
+    ],
+    "plataformas": [
+      "SNES"
+    ],
+    "calificacion": 90,
+    "calificaciones": {
+      "SNES": 90
+    }
+  },
+  {
+    "id": 158,
+    "titulo": "Donkey Kong Country 2",
+    "desarrollador": "Rare",
+    "generos": [
+      "Plataformas"
+    ],
+    "plataformas": [
+      "SNES"
+    ],
+    "calificacion": 92,
+    "calificaciones": {
+      "SNES": 92
+    }
+  },
+  {
+    "id": 159,
+    "titulo": "F-Zero",
+    "desarrollador": "Nintendo EAD",
+    "generos": [
+      "Carreras"
+    ],
+    "plataformas": [
+      "SNES"
+    ],
+    "calificacion": 87,
+    "calificaciones": {
+      "SNES": 87
+    }
+  },
+  {
+    "id": 160,
+    "titulo": "Super Castlevania IV",
+    "desarrollador": "Konami",
+    "generos": [
+      "Acción",
+      "Plataformas"
+    ],
+    "plataformas": [
+      "SNES"
+    ],
+    "calificacion": 91,
+    "calificaciones": {
+      "SNES": 91
+    }
+  },
+  {
+    "id": 161,
+    "titulo": "Mega Man X",
+    "desarrollador": "Capcom",
+    "generos": [
+      "Acción",
+      "Plataformas"
+    ],
+    "plataformas": [
+      "SNES"
+    ],
+    "calificacion": 94,
+    "calificaciones": {
+      "SNES": 94
+    }
+  },
+  {
+    "id": 162,
+    "titulo": "EarthBound",
+    "desarrollador": "Ape / HAL Laboratory",
+    "generos": [
+      "RPG"
+    ],
+    "plataformas": [
+      "SNES"
+    ],
+    "calificacion": 96,
+    "calificaciones": {
+      "SNES": 96
+    }
+  },
+  {
+    "id": 163,
+    "titulo": "Yoshi's Island",
+    "desarrollador": "Nintendo EAD",
+    "generos": [
+      "Plataformas"
+    ],
+    "plataformas": [
+      "SNES"
+    ],
+    "calificacion": 96,
+    "calificaciones": {
+      "SNES": 96
+    }
+  },
+  {
+    "id": 164,
+    "titulo": "Super Mario RPG",
+    "desarrollador": "Square / Nintendo",
+    "generos": [
+      "RPG"
+    ],
+    "plataformas": [
+      "SNES"
+    ],
+    "calificacion": 90,
+    "calificaciones": {
+      "SNES": 90
+    }
+  },
+  {
+    "id": 165,
+    "titulo": "Contra III: The Alien Wars",
+    "desarrollador": "Konami",
+    "generos": [
+      "Run and gun"
+    ],
+    "plataformas": [
+      "SNES"
+    ],
+    "calificacion": 90,
+    "calificaciones": {
+      "SNES": 90
+    }
+  },
+  {
+    "id": 166,
+    "titulo": "Sonic the Hedgehog 2",
+    "desarrollador": "Sega",
+    "generos": [
+      "Plataformas"
+    ],
+    "plataformas": [
+      "Sega Genesis"
+    ],
+    "calificacion": 88,
+    "calificaciones": {
+      "Sega Genesis": 88
+    }
+  },
+  {
+    "id": 167,
+    "titulo": "Streets of Rage 2",
+    "desarrollador": "Ancient",
+    "generos": [
+      "Beat 'em up"
+    ],
+    "plataformas": [
+      "Sega Genesis"
+    ],
+    "calificacion": 88,
+    "calificaciones": {
+      "Sega Genesis": 88
+    }
+  },
+  {
+    "id": 168,
+    "titulo": "Phantasy Star IV",
+    "desarrollador": "Sega",
+    "generos": [
+      "RPG"
+    ],
+    "plataformas": [
+      "Sega Genesis"
+    ],
+    "calificacion": 89,
+    "calificaciones": {
+      "Sega Genesis": 89
+    }
+  },
+  {
+    "id": 169,
+    "titulo": "Gunstar Heroes",
+    "desarrollador": "Treasure",
+    "generos": [
+      "Run and gun"
+    ],
+    "plataformas": [
+      "Sega Genesis"
+    ],
+    "calificacion": 94,
+    "calificaciones": {
+      "Sega Genesis": 94
+    }
+  },
+  {
+    "id": 170,
+    "titulo": "Super Mario Bros. 3",
+    "desarrollador": "Nintendo R&D4;",
+    "generos": [
+      "Plataformas"
+    ],
+    "plataformas": [
+      "NES"
+    ],
+    "calificacion": 94,
+    "calificaciones": {
+      "NES": 94
+    }
+  },
+  {
+    "id": 171,
+    "titulo": "The Legend of Zelda",
+    "desarrollador": "Nintendo R&D4;",
+    "generos": [
+      "Acción",
+      "Aventura"
+    ],
+    "plataformas": [
+      "NES"
+    ],
+    "calificacion": 84,
+    "calificaciones": {
+      "NES": 84
+    }
+  },
+  {
+    "id": 172,
+    "titulo": "Super Mario Bros.",
+    "desarrollador": "Nintendo R&D4;",
+    "generos": [
+      "Plataformas"
+    ],
+    "plataformas": [
+      "NES"
+    ],
+    "calificacion": 84,
+    "calificaciones": {
+      "NES": 84
+    }
+  },
+  {
+    "id": 173,
+    "titulo": "Metroid",
+    "desarrollador": "Nintendo R&D1;",
+    "generos": [
+      "Acción",
+      "Aventura"
+    ],
+    "plataformas": [
+      "NES"
+    ],
+    "calificacion": 83,
+    "calificaciones": {
+      "NES": 83
+    }
+  },
+  {
+    "id": 174,
+    "titulo": "Mega Man 2",
+    "desarrollador": "Capcom",
+    "generos": [
+      "Acción",
+      "Plataformas"
+    ],
+    "plataformas": [
+      "NES"
+    ],
+    "calificacion": 87,
+    "calificaciones": {
+      "NES": 87
+    }
+  },
+  {
+    "id": 175,
+    "titulo": "Castlevania III: Dracula's Curse",
+    "desarrollador": "Konami",
+    "generos": [
+      "Acción",
+      "Plataformas"
+    ],
+    "plataformas": [
+      "NES"
+    ],
+    "calificacion": 86,
+    "calificaciones": {
+      "NES": 86
+    }
+  },
+  {
+    "id": 176,
+    "titulo": "Ninja Gaiden II: The Dark Sword of Chaos",
+    "desarrollador": "Tecmo",
+    "generos": [
+      "Acción",
+      "Plataformas"
+    ],
+    "plataformas": [
+      "NES"
+    ],
+    "calificacion": 85,
+    "calificaciones": {
+      "NES": 85
+    }
+  },
+  {
+    "id": 177,
+    "titulo": "Contra",
+    "desarrollador": "Konami",
+    "generos": [
+      "Run and gun"
+    ],
+    "plataformas": [
+      "NES"
+    ],
+    "calificacion": 83,
+    "calificaciones": {
+      "NES": 83
+    }
+  },
+  {
+    "id": 178,
+    "titulo": "Punch-Out!!",
+    "desarrollador": "Nintendo R&D3;",
+    "generos": [
+      "Deportes",
+      "Boxeo"
+    ],
+    "plataformas": [
+      "NES"
+    ],
+    "calificacion": 88,
+    "calificaciones": {
+      "NES": 88
+    }
+  },
+  {
+    "id": 179,
+    "titulo": "Mike Tyson's Punch-Out!!",
+    "desarrollador": "Nintendo R&D3;",
+    "generos": [
+      "Deportes",
+      "Boxeo"
+    ],
+    "plataformas": [
+      "NES"
+    ],
+    "calificacion": 87,
+    "calificaciones": {
+      "NES": 87
+    }
+  },
+  {
+    "id": 180,
+    "titulo": "Kirby's Adventure",
+    "desarrollador": "HAL Laboratory",
+    "generos": [
+      "Plataformas"
+    ],
+    "plataformas": [
+      "NES"
+    ],
+    "calificacion": 85,
+    "calificaciones": {
+      "NES": 85
+    }
+  },
+  {
+    "id": 181,
+    "titulo": "Mega Man 3",
+    "desarrollador": "Capcom",
+    "generos": [
+      "Acción",
+      "Plataformas"
+    ],
+    "plataformas": [
+      "NES"
+    ],
+    "calificacion": 79,
+    "calificaciones": {
+      "NES": 79
+    }
+  },
+  {
+    "id": 182,
+    "titulo": "DuckTales",
+    "desarrollador": "Capcom",
+    "generos": [
+      "Plataformas"
+    ],
+    "plataformas": [
+      "NES"
+    ],
+    "calificacion": 80,
+    "calificaciones": {
+      "NES": 80
+    }
+  },
+  {
+    "id": 183,
+    "titulo": "Ninja Gaiden",
+    "desarrollador": "Tecmo",
+    "generos": [
+      "Acción",
+      "Plataformas"
+    ],
+    "plataformas": [
+      "NES"
+    ],
+    "calificacion": 82,
+    "calificaciones": {
+      "NES": 82
+    }
+  },
+  {
+    "id": 184,
+    "titulo": "Castlevania II: Simon's Quest",
+    "desarrollador": "Konami",
+    "generos": [
+      "Acción",
+      "Aventura"
+    ],
+    "plataformas": [
+      "NES"
+    ],
+    "calificacion": 58,
+    "calificaciones": {
+      "NES": 58
+    }
+  },
+  {
+    "id": 185,
+    "titulo": "Excitebike",
+    "desarrollador": "Nintendo R&D1;",
+    "generos": [
+      "Carreras"
+    ],
+    "plataformas": [
+      "NES"
+    ],
+    "calificacion": 83,
+    "calificaciones": {
+      "NES": 83
+    }
+  },
+  {
+    "id": 186,
+    "titulo": "Kid Icarus",
+    "desarrollador": "Nintendo R&D1;",
+    "generos": [
+      "Acción",
+      "Plataformas"
+    ],
+    "plataformas": [
+      "NES"
+    ],
+    "calificacion": 73,
+    "calificaciones": {
+      "NES": 73
+    }
+  },
+  {
+    "id": 187,
+    "titulo": "Blaster Master",
+    "desarrollador": "Sunsoft",
+    "generos": [
+      "Acción",
+      "Plataformas"
+    ],
+    "plataformas": [
+      "NES"
+    ],
+    "calificacion": 80,
+    "calificaciones": {
+      "NES": 80
+    }
+  },
+  {
+    "id": 188,
+    "titulo": "Tecmo Bowl",
+    "desarrollador": "Tecmo",
+    "generos": [
+      "Deportes"
+    ],
+    "plataformas": [
+      "NES"
+    ],
+    "calificacion": 82,
+    "calificaciones": {
+      "NES": 82
+    }
+  },
+  {
+    "id": 189,
+    "titulo": "River City Ransom",
+    "desarrollador": "Technōs Japan",
+    "generos": [
+      "Beat 'em up"
+    ],
+    "plataformas": [
+      "NES"
+    ],
+    "calificacion": 78,
+    "calificaciones": {
+      "NES": 78
+    }
+  },
+  {
+    "id": 191,
+    "titulo": "Balatro",
+    "desarrollador": "LocalThunk",
+    "generos": [
+      "Roguelike"
+    ],
+    "plataformas": [
+      "PC",
+      "Nintendo Switch",
+      "PlayStation 4",
+      "PlayStation 5",
+      "Xbox"
+    ],
+    "calificacion": 90
+  }
+
+]
