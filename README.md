@@ -1,94 +1,100 @@
-# ABBY - Recomendador de videojuegos
+# ABBY v2 - Recomendador de videojuegos
 
-ABBY es nuestra aplicación de terminal que permite consultar un catálogo de videojuegos de dos maneras:
-
-1. Buscar videojuegos por género.
-2. Consultar el top 20 de videojuegos de una consola o plataforma. (aunque algunas no llegan a 20)
-
-El catálogo se carga desde un archivo JSON y contiene información como:\
--Título\
--Desarrollador \
--Géneros\
--Plataformas\
--Calificaciones de Metacritic.
+ABBY es una aplicación de terminal desarrollada en Python que permite consultar un catálogo de videojuegos cargado desde un archivo JSON.
 
 ## Funcionalidades
 
-- Carga de datos desde un archivo JSON.
-- Búsqueda y filtrado de videojuegos por género.
-- Listado del top 20 (o menos en algunos casos) por consola o plataforma.
-- Ordenamiento según la calificación correspondiente a la plataforma seleccionada.
-- Validación de las opciones ingresadas por el usuario.
-- Uso de clases, objetos y encapsulamiento.
+1. Buscar videojuegos por género.
+2. Consultar hasta 20 videojuegos de una consola o plataforma, ordenados por calificación.
+3. Buscar un videojuego por su título completo mediante un árbol binario de búsqueda.
+
+El catálogo incluye el título, el desarrollador, los géneros, las plataformas y las calificaciones de cada videojuego.
+
+## Árbol binario de búsqueda
+
+La versión 2 incorpora un árbol binario de búsqueda ordenado alfabéticamente por título que permite:
+
+- Insertar videojuegos.
+- Buscar un título sin distinguir entre mayúsculas y minúsculas.
+- Recorrer el árbol en inorden, preorden y postorden.
+
+La búsqueda por título está integrada en la opción `3` del programa principal. El título debe escribirse completo.
 
 ## Estructura del proyecto
 
-- `Proyect ABBY.py`: contiene las clases, la lógica de búsqueda y la interfaz de terminal.
-- `videojuegos.json`: contiene el catálogo y los datos de prueba utilizados por la aplicación.
-- `README.md`: contiene la descripción y las instrucciones del proyecto.
+```text
+Project ABBY/
+├── Proyect ABBY.py
+├── arbolVideojuegos.py
+├── pruebasArbolABBY.py
+├── experimentosABBY.py
+├── experimentosArbolABBY.py
+├── videojuegos.json
+├── resultadosComplejidadABBY.md
+├── resultadosArbolABBY.md
+└── README.md
+```
 
-## Instrucciones de ejecución
+- `Proyect ABBY.py`: aplicación principal e interfaz de terminal.
+- `arbolVideojuegos.py`: implementación del árbol binario de búsqueda.
+- `pruebasArbolABBY.py`: pruebas de inserción, búsqueda y recorridos.
+- `experimentosABBY.py`: comparación de búsqueda secuencial y binaria de la entrega 2.
+- `experimentosArbolABBY.py`: comparación de búsqueda secuencial y búsqueda en árbol.
+- `videojuegos.json`: catálogo y datos de prueba.
+- `resultadosComplejidadABBY.md`: resultados de la entrega 2.
+- `resultadosArbolABBY.md`: resultados y análisis de complejidad de la entrega 3.
 
-1. Descargar o clonar este repositorio.
-2. Verificar que `Proyect ABBY.py` y `videojuegos.json` estén dentro de la misma carpeta.
-3. Abrir una terminal en la carpeta del proyecto.
+## Requisitos
+
+- Python 3.10 o posterior.
+- No requiere instalar librerías externas.
+
+## Ejecución de ABBY v2
+
+1. Descargar o clonar el repositorio.
+2. Verificar que `Proyect ABBY.py`, `arbolVideojuegos.py` y `videojuegos.json` estén en la misma carpeta.
+3. Abrir una terminal en esa carpeta.
 4. Ejecutar el comando: 
 
-    python "Proyect ABBY.py"
+    python "Proyect ABBY.py" 
 
-    -Nota: En algunos equipos el comando puede ser: python3 "Proyect ABBY.py"
+-Nota: En algunos equipos el comando puede ser: python3 "Proyect ABBY.py"
 
 -Aclaración: Las comillas son necesarias porque el nombre del archivo contiene un espacio.
-
 ## Uso
 
-Al iniciar el programa se muestran dos opciones luego del saludo inicial:
+El menú principal muestra estas opciones:
 
 1. Búsqueda por género
 2. Top por consola
+3. Búsqueda por título
 
 
-### Búsqueda por género
+En la opción `1`, el usuario escribe un género y ABBY muestra los videojuegos relacionados. En la opción `2`, selecciona una plataforma y recibe hasta 20 títulos ordenados por su calificación para esa plataforma. En la opción `3`, escribe el título completo y ABBY lo busca en el árbol binario.
 
-El usuario selecciona la opción `1` e ingresa un género, por ejemplo:
+## Pruebas del árbol
 
-```text
-RPG
-```
+Para probar la búsqueda de un título existente, un título inexistente y los tres recorridos, ejecutar: python pruebasArbolABBY.py
 
-ABBY muestra los videojuegos relacionados con ese género junto con su desarrollador, plataformas y calificación.
 
-### Top por consola
+El recorrido inorden debe mostrar los títulos en orden alfabético.
 
-El usuario selecciona la opción `2`, elige una plataforma de la lista y ABBY muestra hasta 20 videojuegos ordenados por su Metascore específico para esa plataforma.
+## Experimento de complejidad
 
-## Datos de prueba
+Para comparar la búsqueda secuencial con la búsqueda en árbol usando catálogos de 100, 1.000 y 10.000 elementos, ejecutar:
+python experimentosArbolABBY.py
 
-Los datos de prueba se encuentran en `videojuegos.json`. Este archivo contiene el catálogo utilizado para comprobar las búsquedas por género y los rankings por plataforma.
 
-Algunas pruebas sugeridas son:
+El experimento también mide por separado el costo de construcción del árbol. La metodología, las tablas y la conclusión técnica se encuentran en `resultadosArbolABBY.md`.
 
-| Prueba | Entrada   | Resultado esperado                                                       |
-|---|-----------|--------------------------------------------------------------------------|
-| Opción principal inválida | `3`       | El programa informa que solo `1` y `2` son válidas y vuelve a preguntar. |
-| Búsqueda por género | `RPG`     | Muestra los videojuegos correspondientes al género RPG.                  |
-| Género inexistente | `Musical` | Informa que no encontró resultados y vuelve a preguntar.                 |
-| Top por consola | `1`       | Muestra el top de PlayStation 5.                                         |
-| Consola inválida | `23`      | Informa que se debe ingresar un número entre `1` y `17`.                 |
+## Complejidad
 
-## Demo de la versión 1
+- Búsqueda secuencial: `Θ(n)` en el caso promedio.
+- Búsqueda en un árbol equilibrado: `Θ(log n)` en el caso promedio.
+- Búsqueda en un árbol completamente desequilibrado: `O(n)` en el peor caso.
+- Recorridos inorden, preorden y postorden: `Θ(n)`.
 
-La demostración en video debe mostrar, como mínimo:
-
-1. El inicio de ABBY.
-2. La validación de una opción incorrecta.
-3. Una búsqueda por género.
-4. Una consulta del top por consola.
-
-Enlace al video de demostración: 
-
-    Drive: https://drive.google.com/file/d/17Hcvlf6j6iccO0tkjjI-xRkWLb545YsK/view?usp=sharing
-    YT: https://youtu.be/-H-UmdbV8MM
+El árbol implementado no se balancea automáticamente, por lo que su rendimiento depende del orden de inserción.
 
 ## Tecnologías utilizadas
 

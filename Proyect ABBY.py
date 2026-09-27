@@ -1,4 +1,4 @@
-#cabecera
+
 titulo = """
    █████████   ███████████  ███████████  █████ █████
   ███░░░░░███ ░░███░░░░░███░░███░░░░░███░░███ ░░███ 
@@ -19,10 +19,8 @@ def cabecera():
 
 cabecera()
 
-#clases y objetos (TP1)
-
 import json
-
+from arbolVideojuegos import ArbolVideojuegos
 
 class Videojuego:
     def __init__(
@@ -98,6 +96,11 @@ for dato in datos:
     )
 
     catalogo.append(videojuego)
+
+arbolVideojuegos = ArbolVideojuegos()
+
+for videojuego in catalogo:
+    arbolVideojuegos.insertar(videojuego)
 
 class CatalogoVideojuegos:
     def __init__(self, videojuegos):
@@ -255,6 +258,34 @@ def ejecutar_top_por_consola(catalogo):
         print(f"   Calificación: {puntuacion}")
         print("-" * 40)
 
+def ejecutar_busqueda_por_titulo(arbol):
+    while True:
+        titulo_buscado = input(
+            "\n¿Qué videojuego estás buscando?: "
+        ).strip()
+
+        if titulo_buscado == "":
+            print("\nNo ingresaste ningún título. Probá de nuevo.")
+            continue
+
+        videojuego_encontrado = arbol.buscar(titulo_buscado)
+
+        if videojuego_encontrado is None:
+            print(
+                f"\nNo encontramos un videojuego llamado "
+                f"'{titulo_buscado}'."
+            )
+            print(
+                "Revisá que el título esté escrito completo y "
+                "probá nuevamente."
+            )
+            continue
+
+        print("\n¡Encontré el videojuego!\n")
+        print(videojuego_encontrado)
+        print("-" * 40)
+        break
+
 def mostrar_menu_principal():
     print("""
 ¡Hola! ¡Soy ABBY! tu recomendadora de juegos y te explicaré cómo trabajo: tengo 2 modos de búsqueda, en el primero
@@ -264,10 +295,17 @@ género en particular estás buscando títulos (shooters, peleas, etc.) mientras
 me digas (te aclaro que no tengo todas, cuando elijas esa opción te digo de cuáles sí te puedo decir).
 Una vez dicho eso... ¿Qué tipo de búsqueda querés realizar?
             """)
+    print("""
+Actualización: ¡Tengo nuevo modo de búsqueda! Ahora está dispoble la función "Búsqueda por título" la cual accedes
+presionando "3" donde se indica y así podrás buscar los títulos directamente por sus nombres (escribilo completo porque
+sino no lo encuentro).
+    """)
+
     while True:
         print("acordate de que que:")
         print("\t1. Búsqueda por género")
         print("\t2. Top por consola")
+        print("\t3. Búsqueda por título")
 
         opcion = input("\nSeleccioná una opción: ").strip()
 
@@ -283,8 +321,16 @@ Una vez dicho eso... ¿Qué tipo de búsqueda querés realizar?
             print("\n¡Espero haberte ayudado!")
             break
 
+        elif opcion == "3":
+            print("\n¡Perfecto! Ingresaste al modo Búsqueda por título.")
+            ejecutar_busqueda_por_titulo(arbolVideojuegos)
+            print("\n¡Espero haberte ayudado!")
+            break
+
         else:
-            print(f"\n'{opcion}' no es una opción válida. Solamente podés ingresar 1 o 2.")
+            print(f"\n'{opcion}' no es una opción válida. Solamente podés ingresar 1, 2 o 3.")
+
+
 
 
 mostrar_menu_principal()
