@@ -21,6 +21,7 @@ cabecera()
 
 import json
 from arbolVideojuegos import ArbolVideojuegos
+from arbolGeneralABBY import ArbolGeneralABBY
 
 class Videojuego:
     def __init__(
@@ -101,6 +102,10 @@ arbolVideojuegos = ArbolVideojuegos()
 
 for videojuego in catalogo:
     arbolVideojuegos.insertar(videojuego)
+
+arbolGeneral = ArbolGeneralABBY()
+arbolGeneral.construirDesdeCatalogo(catalogo)
+
 
 class CatalogoVideojuegos:
     def __init__(self, videojuegos):
@@ -273,7 +278,7 @@ def ejecutar_busqueda_por_titulo(arbol):
         if videojuego_encontrado is None:
             print(
                 f"\nNo encontramos un videojuego llamado "
-                f"'{titulo_buscado}'."
+                f"'{titulo_buscado}'... o capaz lo escribiste mal"
             )
             print(
                 "Revisá que el título esté escrito completo y "
@@ -286,51 +291,105 @@ def ejecutar_busqueda_por_titulo(arbol):
         print("-" * 40)
         break
 
-def mostrar_menu_principal():
-    print("""
-¡Hola! ¡Soy ABBY! tu recomendadora de juegos y te explicaré cómo trabajo: tengo 2 modos de búsqueda, en el primero
-llamado "Búsqueda por género" accedes ingresando "1" donde se indica, luego tendrás que ingresar sobre qué 
-género en particular estás buscando títulos (shooters, peleas, etc.) mientras que si accedes al segundo llammado
-"Top por consola" ingresando "2" donde se indica, te mostraré una lista de los mejores juegos de la consola que
-me digas (te aclaro que no tengo todas, cuando elijas esa opción te digo de cuáles sí te puedo decir).
-Una vez dicho eso... ¿Qué tipo de búsqueda querés realizar?
-            """)
-    print("""
-Actualización: ¡Tengo nuevo modo de búsqueda! Ahora está dispoble la función "Búsqueda por título" la cual accedes
-presionando "3" donde se indica y así podrás buscar los títulos directamente por sus nombres (escribilo completo porque
-sino no lo encuentro).
-    """)
+def explorarCategorias(arbol):
+    camino = [arbol.raiz]
 
     while True:
-        print("acordate de que que:")
+        nodoActual = camino[-1]
+
+        print("\n" + " > ".join(
+            nodo.nombre for nodo in camino
+        ))
+
+        if nodoActual.tipo == "videojuego":
+            print()
+            print(nodoActual.videojuego)
+
+            plataforma = camino[1].nombre
+            puntuacion = (
+                nodoActual.videojuego
+                .obtener_calificacion_por_plataforma(plataforma)
+            )
+
+            print(f"Calificación en {plataforma}: {puntuacion}")
+            input("\nPresioná Enter para volver al género...")
+            camino.pop()
+            continue
+
+        opciones = sorted(
+            nodoActual.hijos,
+            key=lambda nodo: nodo.nombre.lower()
+        )
+
+        for numero, hijo in enumerate(opciones, start=1):
+            print(f"{numero}. {hijo.nombre}")
+
+        if len(camino) > 1:
+            print("0. Volver al nivel anterior")
+        else:
+            print("0. Terminar exploración")
+
+        opcion = input("\nSeleccioná una opción: ").strip()
+
+        if opcion == "0":
+            if len(camino) == 1:
+                return
+
+            camino.pop()
+            continue
+
+        try:
+            indice = int(opcion) - 1
+        except ValueError:
+            print("\n¡Opción inválida! Probá de vuelta!")
+            continue
+
+        if 0 <= indice < len(opciones):
+            camino.append(opciones[indice])
+        else:
+            print("\n¡Opción inválida! Probá de vuelta")
+
+
+def mostrar_menu_principal():
+    print("""
+¡Hola! ¡Soy ABBY! Tu recomendadora de videojuegos y te explicaré cómo trabajp: tengo 4 modos de búsqueda, donde 
+podés buscar por género, consultar el top por consola, buscar un título completo o explorar el catálogo por categorías.
+En este último, elegís una plataforma, después un género y finalmente el videojuego que querés conocer.
+Una vez dicho eso... 
+""")
+
+    while True:
+        print("\n¿Qué querés hacer?")
         print("\t1. Búsqueda por género")
         print("\t2. Top por consola")
         print("\t3. Búsqueda por título")
+        print("\t4. Explorar categorías")
+        print("\t0. Salir")
 
         opcion = input("\nSeleccioná una opción: ").strip()
 
         if opcion == "1":
             print("\n¡Perfecto! Ingresaste al modo Búsqueda por género.")
             ejecutar_busqueda_por_genero(catalogo_videojuegos)
-            print("\n¡Espero haberte ayudado!")
-            break
 
         elif opcion == "2":
             print("\n¡Perfecto! Ingresaste al modo Top por consola.")
             ejecutar_top_por_consola(catalogo_videojuegos)
-            print("\n¡Espero haberte ayudado!")
-            break
 
         elif opcion == "3":
             print("\n¡Perfecto! Ingresaste al modo Búsqueda por título.")
             ejecutar_busqueda_por_titulo(arbolVideojuegos)
-            print("\n¡Espero haberte ayudado!")
+
+        elif opcion == "4":
+            print("\n¡Perfecto! Ingresaste al modo Explorar categorías.")
+            explorarCategorias(arbolGeneral)
+
+        elif opcion == "0":
+            print("\n¡Hasta la próxima!")
             break
 
         else:
-            print(f"\n'{opcion}' no es una opción válida. Solamente podés ingresar 1, 2 o 3.")
-
-
+            print("\nOpción inválida. Ingresá 0, 1, 2, 3 o 4.")
 
 
 mostrar_menu_principal()
