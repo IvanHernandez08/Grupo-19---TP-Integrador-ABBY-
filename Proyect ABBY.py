@@ -22,6 +22,7 @@ cabecera()
 import json
 from arbolVideojuegos import ArbolVideojuegos
 from arbolGeneralABBY import ArbolGeneralABBY
+from heapABBY import HeapABBY
 
 class Videojuego:
     def __init__(
@@ -134,7 +135,7 @@ class CatalogoVideojuegos:
 
         return resultados
 
-    def filtrar_por_plataforma(self, plataforma_buscada):
+    def filtrar_por_plataforma(self, plataforma_buscada, cantidad=20):
         resultados = []
 
         for videojuego in self._videojuegos:
@@ -143,14 +144,15 @@ class CatalogoVideojuegos:
                     resultados.append(videojuego)
                     break
 
-        resultados.sort(
-            key=lambda videojuego: videojuego.obtener_calificacion_por_plataforma(
-                plataforma_buscada
-            ),
-            reverse=True
-        )
+        heap = HeapABBY()
+        heap.construir(resultados, plataforma_buscada)
 
-        return resultados[:20]
+        mejores = []
+
+        for _ in range(min(cantidad, heap.cantidad())):
+            mejores.append(heap.extraerMaximo())
+
+        return mejores
 
 catalogo_videojuegos = CatalogoVideojuegos(catalogo)
 
@@ -237,8 +239,25 @@ def ejecutar_top_por_consola(catalogo):
             "\n¡Opción inválida! Probá de vuelta"
         )
 
+    while True:
+        cantidadIngresada = input(
+            "\n¿Cuántos videojuegos querés ver en el top?: "
+        ).strip()
+
+        try:
+            cantidad = int(cantidadIngresada)
+        except ValueError:
+            print("\nIngresá un número entero.")
+            continue
+
+        if cantidad <= 0:
+            print("\nIngresá un número mayor que cero.")
+            continue
+
+        break
+
     resultados = catalogo.filtrar_por_plataforma(
-        plataforma_elegida
+        plataforma_elegida, cantidad
     )
 
     if len(resultados) == 0:
@@ -352,7 +371,7 @@ def explorarCategorias(arbol):
 
 def mostrar_menu_principal():
     print("""
-¡Hola! ¡Soy ABBY! Tu recomendadora de videojuegos y te explicaré cómo trabajp: tengo 4 modos de búsqueda, donde 
+¡Hola! ¡Soy ABBY! Tu recomendadora de videojuegos y te explicaré cómo trabajo: tengo 4 modos de búsqueda, donde 
 podés buscar por género, consultar el top por consola, buscar un título completo o explorar el catálogo por categorías.
 En este último, elegís una plataforma, después un género y finalmente el videojuego que querés conocer.
 Una vez dicho eso... 
