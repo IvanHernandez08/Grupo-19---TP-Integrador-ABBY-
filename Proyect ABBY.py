@@ -23,6 +23,9 @@ import json
 from arbolVideojuegos import ArbolVideojuegos
 from arbolGeneralABBY import ArbolGeneralABBY
 from heapABBY import HeapABBY
+from grafoABBY import GrafoABBY
+
+
 
 class Videojuego:
     def __init__(
@@ -106,6 +109,9 @@ for videojuego in catalogo:
 
 arbolGeneral = ArbolGeneralABBY()
 arbolGeneral.construirDesdeCatalogo(catalogo)
+
+grafoVideojuegos = GrafoABBY()
+grafoVideojuegos.construirDesdeCatalogo(catalogo)
 
 
 class CatalogoVideojuegos:
@@ -368,13 +374,55 @@ def explorarCategorias(arbol):
         else:
             print("\n¡Opción inválida! Probá de vuelta")
 
+def consultarGrafo(grafo):
+    while True:
+        titulo = input(
+            "Ingresá el título completo "
+            "(o bien, ingresá 0 para volver al menú principal): "
+        ).strip()
+
+        if titulo == "0":
+            print("Volviendo a Menú principal...")
+            return
+
+        relacionados = grafo.obtenerRelacionados(titulo)
+
+        if relacionados is None:
+            print("\nUps... no encontré ese título.")
+            continue
+
+        if not relacionados:
+            print(
+                "\nEse videojuego no tiene conexiones "
+                "según el criterio de género y desarrollador."
+            )
+            continue
+
+        print("\n¡Muy bien! encontré los siguientes videojuegos relacionados:")
+
+        for juego in relacionados:
+            motivo = grafo.obtenerMotivoRelacion(
+                titulo, juego.titulo
+            )
+
+            print(f"\n- {juego.titulo}")
+            print(
+                "  Géneros compartidos:",
+                ", ".join(motivo["generos"])
+            )
+            print(
+                "  Desarrolladores compartidos:",
+                ", ".join(motivo["desarrolladores"])
+            )
+
 
 def mostrar_menu_principal():
     print("""
 ¡Hola! ¡Soy ABBY! Tu recomendadora de videojuegos y te explicaré cómo trabajo: tengo 4 modos de búsqueda, donde 
-podés buscar por género, consultar el top por consola, buscar un título completo o explorar el catálogo por categorías.
-En este último, elegís una plataforma, después un género y finalmente el videojuego que querés conocer.
-Una vez dicho eso... 
+podés buscar por género, consultar el top por consola, buscar un título completo, explorar el catálogo por categorías
+(en este modo elegís una plataforma, después un género y finalmente el videojuego que querés conocer) o explorarlo por 
+Videojuegos relacionados donde ingresarás el nombre de uno y te devolveré aquellos que están relacionados (entre
+géneros y desarrolladores compartidos). Por lo que una vez dicho eso... 
 """)
 
     while True:
@@ -383,6 +431,7 @@ Una vez dicho eso...
         print("\t2. Top por consola")
         print("\t3. Búsqueda por título")
         print("\t4. Explorar categorías")
+        print("\t5. Ver videojuegos relacionados")
         print("\t0. Salir")
 
         opcion = input("\nSeleccioná una opción: ").strip()
@@ -403,12 +452,16 @@ Una vez dicho eso...
             print("\n¡Perfecto! Ingresaste al modo Explorar categorías.")
             explorarCategorias(arbolGeneral)
 
+        elif opcion == "5":
+            print("\n¡Perfecto! Ingresaste al modo Ver videojuegos relacionados.")
+            consultarGrafo(grafoVideojuegos)
+
         elif opcion == "0":
             print("\n¡Hasta la próxima!")
             break
 
         else:
-            print("\nOpción inválida. Ingresá 0, 1, 2, 3 o 4.")
+            print("\nOpción inválida. Ingresá entre el 0 y el 5.")
 
 
 mostrar_menu_principal()

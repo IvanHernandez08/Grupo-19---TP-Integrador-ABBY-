@@ -1,4 +1,4 @@
-# ABBY v4 - Recomendador de videojuegos
+# ABBY v5 - Recomendador de videojuegos
 
 ABBY es una aplicación de terminal desarrollada en Python que permite consultar un catálogo de videojuegos cargado desde un archivo JSON.
 
@@ -8,6 +8,7 @@ ABBY es una aplicación de terminal desarrollada en Python que permite consultar
 2. Consultar un Top-N de videojuegos por plataforma, ordenados por calificación mediante un heap.
 3. Buscar un videojuego por su título completo mediante un árbol binario de búsqueda.
 4. Explorar categorías mediante un árbol general: plataforma > género > videojuego.
+5. Consultar videojuegos relacionados mediante un grafo y ver qué géneros y desarrolladores comparten.
 
 El menú permite volver a realizar consultas y salir con la opción '0'.
 
@@ -42,6 +43,16 @@ El AVL se utiliza en los experimentos; la búsqueda por título del menú contin
 
 Para cada consulta, ABBY filtra los videojuegos de la plataforma, construye el heap y extrae los mejores. El usuario elige cuántos resultados quiere ver; si pide más de los disponibles, se muestran todos los que hay. El heap también permite insertar y extraer elementos de manera dinámica. En la aplicación se reconstruye en cada consulta.
 
+## Grafo de videojuegos: versión 5
+
+"grafoABBY.py" representa cada videojuego del catálogo como un vértice. Dos videojuegos están conectados cuando comparten al menos un género y al menos un desarrollador. Compartir una plataforma no es suficiente para crear una conexión. También implementa la opción '5' permite consultar los videojuegos relacionados con un título y mostrar el motivo de cada conexión. 
+
+El grafo es no dirigido porque la relación funciona en ambos sentidos, y sin pesos porque las conexiones no tienen una puntuación. No permite aristas repetidas ni conexiones de un videojuego consigo mismo.
+
+La representación utiliza una lista de adyacencia: un diccionario guarda los vecinos de cada videojuego en conjuntos. Los títulos, géneros y desarrolladores se comparan sin distinguir mayúsculas y minúsculas y quitando espacios al principio y al final.
+
+El catálogo actual genera 190 vértices y 146 aristas, con una densidad aproximada del 0,81 %. Elegimos una lista de adyacencia porque esperábamos pocas conexiones en comparación con todas las posibles. Los resultados confirman que el grafo es poco denso y permiten almacenar solo las conexiones existentes, sin reservar una matriz de 190 × 190 posiciones.
+
 ## Estructura del proyecto
 
 ```text
@@ -49,6 +60,7 @@ Project ABBY/
 ├── Proyect ABBY.py
 ├── arbolVideojuegos.py
 ├── arbolGeneralABBY.py
+├── grafoABBY.py
 ├── heapABBY.py
 ├── pruebasHeapABBY.py
 ├── avlABBY.py
@@ -65,6 +77,7 @@ Project ABBY/
 - "Proyect ABBY.py": aplicación principal e interfaz de terminal.
 - "arbolVideojuegos.py": implementación del árbol binario de búsqueda.
 - "arbolGeneralABBY.py": árbol general, búsqueda, recorridos y ejemplos de prueba.
+- "grafoABBY.py": construcción del grafo, consulta de relacionados, motivos de conexión, búsqueda de caminos y pruebas.
 - "heapABBY.py": heap máximo, prioridad por puntuación y orden de llegada, con pruebas de inserción y extracción.
 - "pruebasHeapABBY.py": compara el Top-N del heap con un ordenamiento de referencia y prueba heap vacío e inserción dinámica.
 - "avlABBY.py": implementación AVL y pruebas de las cuatro rotaciones.
@@ -81,10 +94,10 @@ Project ABBY/
 - Python 3.10 o posterior.
 - No requiere instalar librerías externas.
 
-## Ejecución de ABBY v4
+## Ejecución de ABBY v5
 
 1. Descargar o clonar el repositorio.
-2. Verificar que "Proyect ABBY.py", "arbolVideojuegos.py", "arbolGeneralABBY.py", "heapABBY.py" y "videojuegos.json" estén en la misma carpeta.
+2. Verificar que "Proyect ABBY.py", "arbolVideojuegos.py", "arbolGeneralABBY.py", "heapABBY.py", "grafoABBY.py" y "videojuegos.json" estén en la misma carpeta.
 3. Abrir una terminal en esa carpeta.
 4. Ejecutar:
 >python "Proyect ABBY.py"
@@ -100,7 +113,8 @@ El menú principal muestra estas opciones:
 2. Top por consola
 3. Búsqueda por título
 4. Explorar categorías
-0. Salir
+5. Ver videojuegos relacionados
+'0'. Salir
 
 
 En la opción '1', el usuario escribe un género y ABBY muestra los videojuegos relacionados. En la opción '2', selecciona una plataforma y una cantidad entera mayor que cero, y recibe hasta esa cantidad de títulos ordenados por calificación. Si pide más juegos que los disponibles, recibe todos los disponibles. En la opción '3', escribe el título completo y ABBY lo busca en el árbol binario.
@@ -108,6 +122,16 @@ En la opción '1', el usuario escribe un género y ABBY muestra los videojuegos 
 En la opción '4', se eligen plataforma, género y videojuego mediante opciones numeradas. Las opciones aparecen en orden alfabético. Al abrir un juego se muestran sus datos y la calificación correspondiente a la plataforma elegida. Enter vuelve al género y '0' retrocede un nivel; desde la lista de plataformas, '0' regresa al menú principal. Las entradas inválidas permiten reintentar.
 
 Ejemplo de navegación: 4 > Nintendo 64 > Plataformas > Super Mario 64, seleccionando los números que aparecen en pantalla.
+
+En la opción '5', el usuario escribe el título completo y ABBY muestra los videojuegos relacionados en orden alfabético, junto con sus géneros y desarrolladores compartidos. Si el título no existe o no tiene conexiones, se informa con un mensaje. Después se puede consultar otro título o ingresar '0' para volver al menú principal (Por ejemplo, al consultar Elden Ring aparecen Bloodborne y Elden Ring: Shadow of the Erdtree. Comparten el género RPG de acción y el desarrollador FromSoftware. Astro Bot es un ejemplo de videojuego existente sin conexiones según el criterio definido.)
+
+## Pruebas del grafo
+
+>python grafoABBY.py
+
+Comprueba la inserción de vértices y aristas, el rechazo de duplicados, las conexiones con títulos inexistentes y la ausencia de conexiones de un videojuego consigo mismo. Luego construye el grafo del catálogo y verifica su simetría, las consultas de relacionados y los motivos de conexión.
+
+También prueba caminos directos, un camino mínimo en un grafo con ciclos, la búsqueda de un título hacia sí mismo y los casos sin camino o con títulos inexistentes. El resultado del catálogo es de 190 vértices, 146 aristas y una densidad aproximada del 0,81 %. El mensaje final esperado es 'Pruebas de caminos: correctas'.
 
 ## Pruebas del heap y Top-N
 
@@ -155,6 +179,10 @@ El experimento también mide por separado el costo de construcción del árbol. 
 - Los recorridos y la búsqueda exhaustiva del árbol general visitan sus 'N' nodos: 'Θ(N)' visitas. 'N' incluye categorías y apariciones de juegos. La creación y almacenamiento de las rutas agrega un costo proporcional a sus longitudes; en esta jerarquía hay como máximo cuatro nodos por ruta.
 
 El BST del menú no se balancea automáticamente. El árbol general representa categorías y su búsqueda recorre la estructura; no aplica la búsqueda binaria del BST.
+
+En el grafo, la lista de adyacencia ocupa 'O(V + E)', donde 'V' es la cantidad de videojuegos y 'E' la cantidad de conexiones. La construcción compara cada par de videojuegos una vez: realiza 'V × (V - 1) / 2' comparaciones; el costo de cada una depende de los géneros y desarrolladores almacenados.
+
+La consulta de relacionados accede a los vecinos del título y los ordena alfabéticamente. La búsqueda por anchura visita los vértices y sus conexiones alcanzables; en esta implementación también ordena los vecinos para obtener resultados reproducibles.
 
 ## Tecnologías utilizadas
 
