@@ -415,14 +415,43 @@ def consultarGrafo(grafo):
                 ", ".join(motivo["desarrolladores"])
             )
 
+def recomendarPorPlataforma(grafo):
+    titulo = input("\nIngresá el título completo: ").strip()
+    plataforma = input("Ingresá la plataforma: ").strip()
+
+    camino = grafo.buscarRelacionadoPorPlataforma(titulo, plataforma)
+
+    if camino is None:
+        print("\nUps... no encontré ese título.")
+    elif not camino:
+        print("\nNo encontré otro juego conectado en esa plataforma.")
+    else:
+        print(f"\nRecomendación: {camino[-1].titulo}")
+        print("Camino:", " > ".join(juego.titulo for juego in camino))
+        print(f"Cantidad de conexiones: {len(camino) - 1}")
+
+
+def explorarRedDeUnJuego(grafo):
+    titulo = input("\nIngresá el título completo: ").strip()
+    explorados = grafo.explorarConexionesDFS(titulo)
+
+    if explorados is None:
+        print("\nUps... no encontré ese título.")
+    elif not explorados:
+        print("\nMe temo que ese videojuego no tiene conexiones.")
+    else:
+        print(f"\nJuegos encontrados: {len(explorados)}")
+        for juego in explorados:
+            print(f"- {juego.titulo}")
+
 
 def mostrar_menu_principal():
     print("""
-¡Hola! ¡Soy ABBY! Tu recomendadora de videojuegos y te explicaré cómo trabajo: tengo 4 modos de búsqueda, donde 
+¡Hola! ¡Soy ABBY! Tu recomendadora de videojuegos y te explicaré cómo trabajo: tengo 7 modos de búsqueda diferentes, donde 
 podés buscar por género, consultar el top por consola, buscar un título completo, explorar el catálogo por categorías
 (en este modo elegís una plataforma, después un género y finalmente el videojuego que querés conocer) o explorarlo por 
 Videojuegos relacionados donde ingresarás el nombre de uno y te devolveré aquellos que están relacionados (entre
-géneros y desarrolladores compartidos). Por lo que una vez dicho eso... 
+géneros y desarrolladores compartidos), la consola en común o por conexión indirecta. Por lo que una vez dicho eso... 
 """)
 
     while True:
@@ -432,6 +461,8 @@ géneros y desarrolladores compartidos). Por lo que una vez dicho eso...
         print("\t3. Búsqueda por título")
         print("\t4. Explorar categorías")
         print("\t5. Ver videojuegos relacionados")
+        print("\t6. Relacionar por plataforma")
+        print("\t7. Conexión indirecta")
         print("\t0. Salir")
 
         opcion = input("\nSeleccioná una opción: ").strip()
@@ -456,12 +487,20 @@ géneros y desarrolladores compartidos). Por lo que una vez dicho eso...
             print("\n¡Perfecto! Ingresaste al modo Ver videojuegos relacionados.")
             consultarGrafo(grafoVideojuegos)
 
+        elif opcion == "6":
+            print("\n¡Perfecto! Ingresaste al modo Relacionar por plataforma.")
+            recomendarPorPlataforma(grafoVideojuegos)
+
+        elif opcion == "7":
+            print("\n¡Perfecto! Ingresaste al modo Conexión indirecta.")
+            explorarRedDeUnJuego(grafoVideojuegos)
+
         elif opcion == "0":
             print("\n¡Hasta la próxima!")
             break
 
         else:
-            print("\nOpción inválida. Ingresá entre el 0 y el 5.")
+            print("\n¡Opción inválida! Solo podés inggresar del 0 al 7.")
 
 
 mostrar_menu_principal()

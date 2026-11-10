@@ -175,6 +175,62 @@ class GrafoABBY:
 
         return []
 
+    def buscarRelacionadoPorPlataforma(self, tituloOrigen, plataforma):
+        from collections import deque
+
+        origen = self.normalizar(tituloOrigen)
+        plataformaBuscada = self.normalizar(plataforma)
+
+        if origen not in self.videojuegos:
+            return None
+
+        pendientes = deque([origen])
+        anteriores = {origen: None}
+
+        while pendientes:
+            actual = pendientes.popleft()
+            juego = self.videojuegos[actual]
+
+            if actual != origen and any(
+                self.normalizar(nombre) == plataformaBuscada
+                for nombre in juego.plataformas
+            ):
+                camino = []
+                while actual is not None:
+                    camino.append(self.videojuegos[actual])
+                    actual = anteriores[actual]
+
+                camino.reverse()
+                return camino
+
+            for vecino in sorted(self.adyacencia[actual]):
+                if vecino not in anteriores:
+                    anteriores[vecino] = actual
+                    pendientes.append(vecino)
+
+        return []
+
+    def explorarConexionesDFS(self, tituloOrigen):
+        origen = self.normalizar(tituloOrigen)
+
+        if origen not in self.videojuegos:
+            return None
+
+        visitados = {origen}
+        relacionados = []
+
+        def visitar(actual):
+            for vecino in sorted(self.adyacencia[actual]):
+                if vecino in visitados:
+                    continue
+
+                visitados.add(vecino)
+                relacionados.append(self.videojuegos[vecino])
+                visitar(vecino)
+
+        visitar(origen)
+        return relacionados
+
 if __name__ == "__main__":
     from types import SimpleNamespace
 
@@ -309,3 +365,47 @@ if __name__ == "__main__":
         " > ".join(juego.titulo for juego in caminoPrueba)
     )
     print("Pruebas de caminos: correctas")
+
+    grafoPlataformas = GrafoABBY()
+
+    for titulo, plataformas in (
+        ("Inicio", ["PC"]),
+        ("Puente", ["Xbox 360"]),
+        ("Candidato", ["PlayStation 4"]),
+        ("Aislado", ["PlayStation 4"]),
+    ):
+        grafoPlataformas.agregarVertice(
+            SimpleNamespace(titulo=titulo, plataformas=plataformas)
+        )
+
+    grafoPlataformas.agregarArista("Inicio", "Puente")
+    grafoPlataformas.agregarArista("Puente", "Candidato")
+
+    camino = grafoPlataformas.buscarRelacionadoPorPlataforma(
+        "Inicio", "playstation 4"
+    )
+
+    assert [juego.titulo for juego in camino] == [
+        "Inicio", "Puente", "Candidato"
+    ]
+    assert grafoPlataformas.buscarRelacionadoPorPlataforma(
+        "Inicio", "PC"
+    ) == []
+    assert grafoPlataformas.buscarRelacionadoPorPlataforma(
+        "Inexistente", "PC"
+    ) is None
+
+    print("\nBFS por plataforma:", " > ".join(
+        juego.titulo for juego in camino
+    ))
+    print("Pruebas de BFS por plataforma: correctas")
+
+    explorados = grafoPrueba.explorarConexionesDFS("a")
+    titulos = [juego.titulo for juego in explorados]
+
+    assert titulos == ["B", "C", "D"]
+    assert grafoPlataformas.explorarConexionesDFS("Aislado") == []
+    assert grafoPrueba.explorarConexionesDFS("Inexistente") is None
+
+    print("\nDFS desde A:", ", ".join(titulos))
+    print("Pruebas de DFS: correctas")
